@@ -20,34 +20,34 @@ slovarish.frontend.nouns.noun_view.case_name_sets = cljs.core.PersistentHashMap.
  *   stress position in at least one grammatical case.
  */
 slovarish.frontend.nouns.noun_view.has_stress_exceptions_QMARK_ = (function slovarish$frontend$nouns$noun_view$has_stress_exceptions_QMARK_(table,chislo){
-return cljs.core.some((function (p__1026127){
-var vec__1026128 = p__1026127;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026128,(0),null);
-var chisla = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026128,(1),null);
+return cljs.core.some((function (p__1026836){
+var vec__1026837 = p__1026836;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026837,(0),null);
+var chisla = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026837,(1),null);
 return new cljs.core.Keyword(null,"unpredictable-stress?","unpredictable-stress?",8527028).cljs$core$IFn$_invoke$arity$1((chislo.cljs$core$IFn$_invoke$arity$1 ? chislo.cljs$core$IFn$_invoke$arity$1(chisla) : chislo.call(null,chisla)));
 }),table);
 });
-slovarish.frontend.nouns.noun_view.single_cell_table = (function slovarish$frontend$nouns$noun_view$single_cell_table(p__1026141){
-var map__1026142 = p__1026141;
-var map__1026142__$1 = cljs.core.__destructure_map(map__1026142);
-var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026142__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
-var stressed = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026142__$1,new cljs.core.Keyword(null,"stressed","stressed",-936375069));
-return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tbody","tbody",-80678300),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026144(s__1026145){
+slovarish.frontend.nouns.noun_view.single_cell_table = (function slovarish$frontend$nouns$noun_view$single_cell_table(p__1026848){
+var map__1026849 = p__1026848;
+var map__1026849__$1 = cljs.core.__destructure_map(map__1026849);
+var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026849__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
+var stressed = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026849__$1,new cljs.core.Keyword(null,"stressed","stressed",-936375069));
+return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tbody","tbody",-80678300),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026850(s__1026851){
 return (new cljs.core.LazySeq(null,(function (){
-var s__1026145__$1 = s__1026145;
+var s__1026851__$1 = s__1026851;
 while(true){
-var temp__5753__auto__ = cljs.core.seq(s__1026145__$1);
+var temp__5753__auto__ = cljs.core.seq(s__1026851__$1);
 if(temp__5753__auto__){
-var s__1026145__$2 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__1026145__$2)){
-var c__4650__auto__ = cljs.core.chunk_first(s__1026145__$2);
+var s__1026851__$2 = temp__5753__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__1026851__$2)){
+var c__4650__auto__ = cljs.core.chunk_first(s__1026851__$2);
 var size__4651__auto__ = cljs.core.count(c__4650__auto__);
-var b__1026147 = cljs.core.chunk_buffer(size__4651__auto__);
-if((function (){var i__1026146 = (0);
+var b__1026853 = cljs.core.chunk_buffer(size__4651__auto__);
+if((function (){var i__1026852 = (0);
 while(true){
-if((i__1026146 < size__4651__auto__)){
-var padezh = cljs.core._nth(c__4650__auto__,i__1026146);
-cljs.core.chunk_append(b__1026147,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"nominative","nominative",148321668)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"colSpan","colSpan",872137394),(2),new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),(6),new cljs.core.Keyword(null,"data-score","data-score",1628263942),(1),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center"], null)], null),(cljs.core.truth_(cljs.core.deref(slovarish.frontend.state.show_stress_QMARK_))?(function (){var or__4253__auto__ = stressed;
+if((i__1026852 < size__4651__auto__)){
+var padezh = cljs.core._nth(c__4650__auto__,i__1026852);
+cljs.core.chunk_append(b__1026853,cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"nominative","nominative",148321668)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"colSpan","colSpan",872137394),(2),new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),(6),new cljs.core.Keyword(null,"data-score","data-score",1628263942),(1),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center"], null)], null),(cljs.core.truth_(cljs.core.deref(slovarish.frontend.state.show_stress_QMARK_))?(function (){var or__4253__auto__ = stressed;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
 } else {
@@ -61,8 +61,8 @@ return "";
 }
 })())], null):null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)));
 
-var G__1026402 = (i__1026146 + (1));
-i__1026146 = G__1026402;
+var G__1027101 = (i__1026852 + (1));
+i__1026852 = G__1027101;
 continue;
 } else {
 return true;
@@ -70,12 +70,12 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026147),slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026144(cljs.core.chunk_rest(s__1026145__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__1026853),slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026850(cljs.core.chunk_rest(s__1026851__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026147),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__1026853),null);
 }
 } else {
-var padezh = cljs.core.first(s__1026145__$2);
+var padezh = cljs.core.first(s__1026851__$2);
 return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"nominative","nominative",148321668)))?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"colSpan","colSpan",872137394),(2),new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),(6),new cljs.core.Keyword(null,"data-score","data-score",1628263942),(1),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"text-align","text-align",1786091845),"center"], null)], null),(cljs.core.truth_(cljs.core.deref(slovarish.frontend.state.show_stress_QMARK_))?(function (){var or__4253__auto__ = stressed;
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -88,7 +88,7 @@ return or__4253__auto__;
 } else {
 return "";
 }
-})())], null):null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)),slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026144(cljs.core.rest(s__1026145__$2)));
+})())], null):null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)),slovarish$frontend$nouns$noun_view$single_cell_table_$_iter__1026850(cljs.core.rest(s__1026851__$2)));
 }
 } else {
 return null;
@@ -97,8 +97,8 @@ break;
 }
 }),null,null));
 });
-return iter__4652__auto__(cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((3),(function (){var fexpr__1026175 = cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.ordering));
-return (fexpr__1026175.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026175.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.nouns.noun_view.padezhi) : fexpr__1026175.call(null,slovarish.frontend.nouns.noun_view.padezhi));
+return iter__4652__auto__(cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((3),(function (){var fexpr__1026893 = cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.ordering));
+return (fexpr__1026893.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026893.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.nouns.noun_view.padezhi) : fexpr__1026893.call(null,slovarish.frontend.nouns.noun_view.padezhi));
 })()));
 })())], null);
 });
@@ -106,12 +106,12 @@ return (fexpr__1026175.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026175.cljs$core$
  * Displays a single entry in the declension table. If there is a fleeting vowel,
  *   this splits the word up and highlights the fleeting vowel.
  */
-slovarish.frontend.nouns.noun_view.display_form = (function slovarish$frontend$nouns$noun_view$display_form(p__1026181,ending_patt){
-var map__1026182 = p__1026181;
-var map__1026182__$1 = cljs.core.__destructure_map(map__1026182);
-var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026182__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
-var stressed = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026182__$1,new cljs.core.Keyword(null,"stressed","stressed",-936375069));
-var fleeting_vowel_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026182__$1,new cljs.core.Keyword(null,"fleeting-vowel?","fleeting-vowel?",-1638057330));
+slovarish.frontend.nouns.noun_view.display_form = (function slovarish$frontend$nouns$noun_view$display_form(p__1026905,ending_patt){
+var map__1026906 = p__1026905;
+var map__1026906__$1 = cljs.core.__destructure_map(map__1026906);
+var text = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026906__$1,new cljs.core.Keyword(null,"text","text",-1790561697));
+var stressed = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026906__$1,new cljs.core.Keyword(null,"stressed","stressed",-936375069));
+var fleeting_vowel_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026906__$1,new cljs.core.Keyword(null,"fleeting-vowel?","fleeting-vowel?",-1638057330));
 var base = (cljs.core.truth_((function (){var and__4251__auto__ = cljs.core.deref(slovarish.frontend.state.show_stress_QMARK_);
 if(cljs.core.truth_(and__4251__auto__)){
 return new cljs.core.Keyword(null,"verified?","verified?",863527758).cljs$core$IFn$_invoke$arity$1(slovarish.frontend.state.result());
@@ -119,9 +119,9 @@ return new cljs.core.Keyword(null,"verified?","verified?",863527758).cljs$core$I
 return and__4251__auto__;
 }
 })())?stressed:text);
-var fv_in_ending = (function (){var and__4251__auto__ = (function (){var or__4253__auto__ = (function (){var G__1026191 = cljs.core.deref(slovarish.frontend.state.input);
-var fexpr__1026190 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["\u043C\u044B\u0448\u043E\u043D\u043E\u043A",null,"\u043C\u0435\u0434\u0432\u0435\u0436\u043E\u043D\u043E\u043A",null], null), null);
-return (fexpr__1026190.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026190.cljs$core$IFn$_invoke$arity$1(G__1026191) : fexpr__1026190.call(null,G__1026191));
+var fv_in_ending = (function (){var and__4251__auto__ = (function (){var or__4253__auto__ = (function (){var G__1026909 = cljs.core.deref(slovarish.frontend.state.input);
+var fexpr__1026908 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, ["\u043C\u044B\u0448\u043E\u043D\u043E\u043A",null,"\u043C\u0435\u0434\u0432\u0435\u0436\u043E\u043D\u043E\u043A",null], null), null);
+return (fexpr__1026908.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026908.cljs$core$IFn$_invoke$arity$1(G__1026909) : fexpr__1026908.call(null,G__1026909));
 })();
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -145,21 +145,21 @@ return cljs.core.not(fv_in_ending);
 } else {
 return and__4251__auto__;
 }
-})())?(function (){var vec__1026196 = cljs.core.re_find(/(.+)([еёои]\u0301?)([^аеёиоуяюыэ]ь?ю?)$/,stem);
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026196,(0),null);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026196,(1),null);
-var fv = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026196,(2),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026196,(3),null);
+})())?(function (){var vec__1026914 = cljs.core.re_find(/(.+)([еёои]\u0301?)([^аеёиоуяюыэ]ь?ю?)$/,stem);
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026914,(0),null);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026914,(1),null);
+var fv = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026914,(2),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026914,(3),null);
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.stem","span.stem",-899646523),a,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.fleeting-vowel","span.fleeting-vowel",1494768284),fv], null),b], null);
 })():new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.stem","span.stem",-899646523),stem], null)),(cljs.core.truth_(ending_patt)?(function (){var temp__5755__auto__ = fv_in_ending;
 if((temp__5755__auto__ == null)){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.ending","span.ending",1562206745),cljs.core.re_find(ending_patt,base)], null);
 } else {
-var vec__1026199 = temp__5755__auto__;
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026199,(0),null);
-var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026199,(1),null);
-var fv = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026199,(2),null);
-var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026199,(3),null);
+var vec__1026927 = temp__5755__auto__;
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026927,(0),null);
+var a = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026927,(1),null);
+var fv = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026927,(2),null);
+var b = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__1026927,(3),null);
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.ending","span.ending",1562206745),a,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.fleeting-vowel","span.fleeting-vowel",1494768284),fv], null),b], null);
 }
 })():null)], null);
@@ -174,9 +174,9 @@ if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.keyword.cljs$core$IFn$
 return (1);
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(chislo,new cljs.core.Keyword(null,"plural","plural",-881591021))){
-var G__1026212 = padezh;
-var G__1026212__$1 = (((G__1026212 instanceof cljs.core.Keyword))?G__1026212.fqn:null);
-switch (G__1026212__$1) {
+var G__1026939 = padezh;
+var G__1026939__$1 = (((G__1026939 instanceof cljs.core.Keyword))?G__1026939.fqn:null);
+switch (G__1026939__$1) {
 case "nominative":
 if(cljs.core.truth_(animate)){
 return (1);
@@ -219,9 +219,9 @@ return (1);
 }
 } else {
 if(((clojure.string.ends_with_QMARK_(cljs.core.deref(slovarish.frontend.state.input),"\u043C\u044F")) || (((((clojure.string.ends_with_QMARK_(cljs.core.deref(slovarish.frontend.state.input),"\u044C")) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(gender,new cljs.core.Keyword(null,"feminine","feminine",-223910280))))) || (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(slovarish.frontend.state.input),"\u043F\u0443\u0442\u044C")))))){
-var G__1026219 = padezh;
-var G__1026219__$1 = (((G__1026219 instanceof cljs.core.Keyword))?G__1026219.fqn:null);
-switch (G__1026219__$1) {
+var G__1026942 = padezh;
+var G__1026942__$1 = (((G__1026942 instanceof cljs.core.Keyword))?G__1026942.fqn:null);
+switch (G__1026942__$1) {
 case "nominative":
 return (2);
 
@@ -244,9 +244,9 @@ return (1);
 }
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(gender,new cljs.core.Keyword(null,"masculine","masculine",-523682579))){
-var G__1026223 = padezh;
-var G__1026223__$1 = (((G__1026223 instanceof cljs.core.Keyword))?G__1026223.fqn:null);
-switch (G__1026223__$1) {
+var G__1026946 = padezh;
+var G__1026946__$1 = (((G__1026946 instanceof cljs.core.Keyword))?G__1026946.fqn:null);
+switch (G__1026946__$1) {
 case "nominative":
 if(cljs.core.truth_(animate)){
 return (1);
@@ -277,9 +277,9 @@ return (1);
 }
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(gender,new cljs.core.Keyword(null,"neuter","neuter",-2013207957))){
-var G__1026225 = padezh;
-var G__1026225__$1 = (((G__1026225 instanceof cljs.core.Keyword))?G__1026225.fqn:null);
-switch (G__1026225__$1) {
+var G__1026947 = padezh;
+var G__1026947__$1 = (((G__1026947 instanceof cljs.core.Keyword))?G__1026947.fqn:null);
+switch (G__1026947__$1) {
 case "nominative":
 return (2);
 
@@ -301,21 +301,21 @@ return (1);
 }
 }
 });
-slovarish.frontend.nouns.noun_view.add_classes = (function slovarish$frontend$nouns$noun_view$add_classes(p__1026231){
-var map__1026233 = p__1026231;
-var map__1026233__$1 = cljs.core.__destructure_map(map__1026233);
-var irregular_form_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026233__$1,new cljs.core.Keyword(null,"irregular-form?","irregular-form?",1272828690));
-var unpredictable_stress_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026233__$1,new cljs.core.Keyword(null,"unpredictable-stress?","unpredictable-stress?",8527028));
-var same_as_base_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026233__$1,new cljs.core.Keyword(null,"same-as-base?","same-as-base?",-1058135259));
+slovarish.frontend.nouns.noun_view.add_classes = (function slovarish$frontend$nouns$noun_view$add_classes(p__1026954){
+var map__1026955 = p__1026954;
+var map__1026955__$1 = cljs.core.__destructure_map(map__1026955);
+var irregular_form_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026955__$1,new cljs.core.Keyword(null,"irregular-form?","irregular-form?",1272828690));
+var unpredictable_stress_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026955__$1,new cljs.core.Keyword(null,"unpredictable-stress?","unpredictable-stress?",8527028));
+var same_as_base_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026955__$1,new cljs.core.Keyword(null,"same-as-base?","same-as-base?",-1058135259));
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [(cljs.core.truth_(irregular_form_QMARK_)?"irregular-form":null),(cljs.core.truth_(unpredictable_stress_QMARK_)?"unpredictable-stress":null),(cljs.core.truth_(same_as_base_QMARK_)?"same-as-base":null)], null);
 });
 slovarish.frontend.nouns.noun_view.main_stress_location = (function slovarish$frontend$nouns$noun_view$main_stress_location(stress_pattern,chislo){
-var G__1026237 = chislo;
-var G__1026237__$1 = (((G__1026237 instanceof cljs.core.Keyword))?G__1026237.fqn:null);
-switch (G__1026237__$1) {
+var G__1026957 = chislo;
+var G__1026957__$1 = (((G__1026957 instanceof cljs.core.Keyword))?G__1026957.fqn:null);
+switch (G__1026957__$1) {
 case "singular":
-if(cljs.core.truth_((function (){var fexpr__1026238 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"e","e",1381269198),null,new cljs.core.Keyword(null,"c","c",-1763192079),null,new cljs.core.Keyword(null,"a","a",-2123407586),null], null), null);
-return (fexpr__1026238.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026238.cljs$core$IFn$_invoke$arity$1(stress_pattern) : fexpr__1026238.call(null,stress_pattern));
+if(cljs.core.truth_((function (){var fexpr__1026959 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"e","e",1381269198),null,new cljs.core.Keyword(null,"c","c",-1763192079),null,new cljs.core.Keyword(null,"a","a",-2123407586),null], null), null);
+return (fexpr__1026959.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026959.cljs$core$IFn$_invoke$arity$1(stress_pattern) : fexpr__1026959.call(null,stress_pattern));
 })())){
 return "stem";
 } else {
@@ -324,8 +324,8 @@ return "ending";
 
 break;
 case "plural":
-if(cljs.core.truth_((function (){var fexpr__1026239 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"d*","d*",-1694593043),null,new cljs.core.Keyword(null,"d","d",1972142424),null,new cljs.core.Keyword(null,"a","a",-2123407586),null], null), null);
-return (fexpr__1026239.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026239.cljs$core$IFn$_invoke$arity$1(stress_pattern) : fexpr__1026239.call(null,stress_pattern));
+if(cljs.core.truth_((function (){var fexpr__1026962 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"d*","d*",-1694593043),null,new cljs.core.Keyword(null,"d","d",1972142424),null,new cljs.core.Keyword(null,"a","a",-2123407586),null], null), null);
+return (fexpr__1026962.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026962.cljs$core$IFn$_invoke$arity$1(stress_pattern) : fexpr__1026962.call(null,stress_pattern));
 })())){
 return "stem";
 } else {
@@ -334,14 +334,14 @@ return "ending";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026237__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026957__$1)].join('')));
 
 }
 });
 slovarish.frontend.nouns.noun_view.stress_heading = (function slovarish$frontend$nouns$noun_view$stress_heading(table,stress_pattern,chislo){
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.column-header.sans","th.column-header.sans",2019543545),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.italic.note","span.italic.note",1871095314),(function (){var G__1026247 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026247__$1 = (((G__1026247 instanceof cljs.core.Keyword))?G__1026247.fqn:null);
-switch (G__1026247__$1) {
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.column-header.sans","th.column-header.sans",2019543545),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.italic.note","span.italic.note",1871095314),(function (){var G__1026963 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1026963__$1 = (((G__1026963 instanceof cljs.core.Keyword))?G__1026963.fqn:null);
+switch (G__1026963__$1) {
 case "english":
 return "stress on the ";
 
@@ -351,19 +351,19 @@ return "\u0443\u0434\u0430\u0440\u0435\u043D\u0438\u0435 \u043D\u0430 ";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026247__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026963__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(slovarish.frontend.state.display_language),new cljs.core.Keyword(null,"english","english",1087501909)))?"small-caps":null)], null),(function (){var G__1026248 = slovarish.frontend.nouns.noun_view.main_stress_location(stress_pattern,chislo);
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"class","class",-2030961996),((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(slovarish.frontend.state.display_language),new cljs.core.Keyword(null,"english","english",1087501909)))?"small-caps":null)], null),(function (){var G__1026965 = slovarish.frontend.nouns.noun_view.main_stress_location(stress_pattern,chislo);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(slovarish.frontend.state.display_language),new cljs.core.Keyword(null,"russian","russian",1887936458))){
-var fexpr__1026250 = new cljs.core.PersistentArrayMap(null, 2, ["stem","\u043E\u0441\u043D\u043E\u0432\u0443","ending","\u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u0435"], null);
-return (fexpr__1026250.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026250.cljs$core$IFn$_invoke$arity$1(G__1026248) : fexpr__1026250.call(null,G__1026248));
+var fexpr__1026967 = new cljs.core.PersistentArrayMap(null, 2, ["stem","\u043E\u0441\u043D\u043E\u0432\u0443","ending","\u043E\u043A\u043E\u043D\u0447\u0430\u043D\u0438\u0435"], null);
+return (fexpr__1026967.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026967.cljs$core$IFn$_invoke$arity$1(G__1026965) : fexpr__1026967.call(null,G__1026965));
 } else {
-return G__1026248;
+return G__1026965;
 }
-})()], null),(cljs.core.truth_(slovarish.frontend.nouns.noun_view.has_stress_exceptions_QMARK_(table,chislo))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.italic.note","span.italic.note",1871095314),(function (){var G__1026251 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026251__$1 = (((G__1026251 instanceof cljs.core.Keyword))?G__1026251.fqn:null);
-switch (G__1026251__$1) {
+})()], null),(cljs.core.truth_(slovarish.frontend.nouns.noun_view.has_stress_exceptions_QMARK_(table,chislo))?new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.italic.note","span.italic.note",1871095314),(function (){var G__1026972 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1026972__$1 = (((G__1026972 instanceof cljs.core.Keyword))?G__1026972.fqn:null);
+switch (G__1026972__$1) {
 case "english":
 return " (mostly)";
 
@@ -373,7 +373,7 @@ return " (\u0432 \u043F\u0440\u0438\u043D\u0446\u0438\u043F\u0435)";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026251__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026972__$1)].join('')));
 
 }
 })()], null):null)], null);
@@ -381,51 +381,51 @@ throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$ari
 /**
  * This is the body of the HTML table containing the declensions.
  */
-slovarish.frontend.nouns.noun_view.assemble_table = (function slovarish$frontend$nouns$noun_view$assemble_table(p__1026261){
-var map__1026262 = p__1026261;
-var map__1026262__$1 = cljs.core.__destructure_map(map__1026262);
-var result = map__1026262__$1;
-var gender = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"gender","gender",-733930727));
-var declines_like_adj_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"declines-like-adj?","declines-like-adj?",334554915));
-var table = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"table","table",-564943036));
-var plural_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"plural-only?","plural-only?",727015978));
-var animate = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"animate","animate",1850194573));
-var sg_count = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"sg-count","sg-count",1387932914));
-var adjectivals = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"adjectivals","adjectivals",-804770540));
-var pl_count = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"pl-count","pl-count",2104515031));
-var singular_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026262__$1,new cljs.core.Keyword(null,"singular-only?","singular-only?",-995012104));
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tbody","tbody",-80678300),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026263(s__1026264){
+slovarish.frontend.nouns.noun_view.assemble_table = (function slovarish$frontend$nouns$noun_view$assemble_table(p__1026980){
+var map__1026981 = p__1026980;
+var map__1026981__$1 = cljs.core.__destructure_map(map__1026981);
+var result = map__1026981__$1;
+var gender = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"gender","gender",-733930727));
+var declines_like_adj_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"declines-like-adj?","declines-like-adj?",334554915));
+var table = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"table","table",-564943036));
+var plural_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"plural-only?","plural-only?",727015978));
+var animate = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"animate","animate",1850194573));
+var sg_count = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"sg-count","sg-count",1387932914));
+var adjectivals = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"adjectivals","adjectivals",-804770540));
+var pl_count = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"pl-count","pl-count",2104515031));
+var singular_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026981__$1,new cljs.core.Keyword(null,"singular-only?","singular-only?",-995012104));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tbody","tbody",-80678300),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026982(s__1026983){
 return (new cljs.core.LazySeq(null,(function (){
-var s__1026264__$1 = s__1026264;
+var s__1026983__$1 = s__1026983;
 while(true){
-var temp__5753__auto__ = cljs.core.seq(s__1026264__$1);
+var temp__5753__auto__ = cljs.core.seq(s__1026983__$1);
 if(temp__5753__auto__){
-var s__1026264__$2 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__1026264__$2)){
-var c__4650__auto__ = cljs.core.chunk_first(s__1026264__$2);
+var s__1026983__$2 = temp__5753__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__1026983__$2)){
+var c__4650__auto__ = cljs.core.chunk_first(s__1026983__$2);
 var size__4651__auto__ = cljs.core.count(c__4650__auto__);
-var b__1026266 = cljs.core.chunk_buffer(size__4651__auto__);
-if((function (){var i__1026265 = (0);
+var b__1026985 = cljs.core.chunk_buffer(size__4651__auto__);
+if((function (){var i__1026984 = (0);
 while(true){
-if((i__1026265 < size__4651__auto__)){
-var padezh = cljs.core._nth(c__4650__auto__,i__1026265);
+if((i__1026984 < size__4651__auto__)){
+var padezh = cljs.core._nth(c__4650__auto__,i__1026984);
 if(cljs.core.truth_((padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table)))){
-var map__1026271 = (padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table));
-var map__1026271__$1 = cljs.core.__destructure_map(map__1026271);
-var singular = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026271__$1,new cljs.core.Keyword(null,"singular","singular",1409933445));
-var plural = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026271__$1,new cljs.core.Keyword(null,"plural","plural",-881591021));
+var map__1026991 = (padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table));
+var map__1026991__$1 = cljs.core.__destructure_map(map__1026991);
+var singular = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026991__$1,new cljs.core.Keyword(null,"singular","singular",1409933445));
+var plural = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026991__$1,new cljs.core.Keyword(null,"plural","plural",-881591021));
 var ending = (cljs.core.truth_(declines_like_adj_QMARK_)?slovarish.frontend.nouns.endings.adj_ending:slovarish.frontend.nouns.endings.noun_ending);
-cljs.core.chunk_append(b__1026266,cljs.core.with_meta(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),(cljs.core.truth_(plural_only_QMARK_)?null:(function (){var temp__5757__auto__ = slovarish.frontend.nouns.noun_view.rowspan(padezh,gender,animate,new cljs.core.Keyword(null,"singular","singular",1409933445));
+cljs.core.chunk_append(b__1026985,cljs.core.with_meta(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),(cljs.core.truth_(plural_only_QMARK_)?null:(function (){var temp__5757__auto__ = slovarish.frontend.nouns.noun_view.rowspan(padezh,gender,animate,new cljs.core.Keyword(null,"singular","singular",1409933445));
 if((temp__5757__auto__ == null)){
 return null;
 } else {
 var rs = temp__5757__auto__;
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(singular),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(singular)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,singular,(function (){var G__1026274 = cljs.core.deref(slovarish.frontend.state.input);
-var G__1026275 = gender;
-var G__1026276 = animate;
-var G__1026277 = padezh;
-var G__1026278 = new cljs.core.Keyword(null,"singular","singular",1409933445);
-return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1026274,G__1026275,G__1026276,G__1026277,G__1026278) : ending.call(null,G__1026274,G__1026275,G__1026276,G__1026277,G__1026278));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(singular),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(singular)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,singular,(function (){var G__1026992 = cljs.core.deref(slovarish.frontend.state.input);
+var G__1026993 = gender;
+var G__1026994 = animate;
+var G__1026995 = padezh;
+var G__1026996 = new cljs.core.Keyword(null,"singular","singular",1409933445);
+return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1026992,G__1026993,G__1026994,G__1026995,G__1026996) : ending.call(null,G__1026992,G__1026993,G__1026994,G__1026995,G__1026996));
 })()], null)], null);
 }
 })()),(cljs.core.truth_((function (){var and__4251__auto__ = plural;
@@ -439,23 +439,23 @@ if((temp__5757__auto__ == null)){
 return null;
 } else {
 var rs = temp__5757__auto__;
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(plural),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(plural)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,plural,(function (){var G__1026279 = cljs.core.deref(slovarish.frontend.state.input);
-var G__1026280 = gender;
-var G__1026281 = animate;
-var G__1026282 = padezh;
-var G__1026283 = new cljs.core.Keyword(null,"plural","plural",-881591021);
-return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1026279,G__1026280,G__1026281,G__1026282,G__1026283) : ending.call(null,G__1026279,G__1026280,G__1026281,G__1026282,G__1026283));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(plural),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(plural)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,plural,(function (){var G__1027009 = cljs.core.deref(slovarish.frontend.state.input);
+var G__1027010 = gender;
+var G__1027011 = animate;
+var G__1027012 = padezh;
+var G__1027013 = new cljs.core.Keyword(null,"plural","plural",-881591021);
+return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1027009,G__1027010,G__1027011,G__1027012,G__1027013) : ending.call(null,G__1027009,G__1027010,G__1027011,G__1027012,G__1027013));
 })()], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"nominative","nominative",148321668))) || (((cljs.core.not(animate)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"accusative","accusative",-886115147)))))))?(cljs.core.truth_(sg_count)?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.count-form","span.count-form",1454942314),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),"Count form after numbers ending in \u0434\u0432\u0430, \u0442\u0440\u0438, \u0447\u0435\u0442\u044B\u0440\u0435"], null),"\u270C\uFE0F\uD83E\uDD1F\uD83D\uDD96 ",sg_count], null):(cljs.core.truth_(pl_count)?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.count-form","span.count-form",1454942314),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),"Count form after numbers NOT ending in \u0434\u0432\u0430, \u0442\u0440\u0438, \u0447\u0435\u0442\u044B\u0440\u0435"], null),"\u270B\uD83D\uDE4C ",pl_count], null):null
 )):null)], null);
 }
 })():null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)));
 
-var G__1026424 = (i__1026265 + (1));
-i__1026265 = G__1026424;
+var G__1027138 = (i__1026984 + (1));
+i__1026984 = G__1027138;
 continue;
 } else {
-var G__1026425 = (i__1026265 + (1));
-i__1026265 = G__1026425;
+var G__1027139 = (i__1026984 + (1));
+i__1026984 = G__1027139;
 continue;
 }
 } else {
@@ -464,29 +464,29 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026266),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026263(cljs.core.chunk_rest(s__1026264__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__1026985),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026982(cljs.core.chunk_rest(s__1026983__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026266),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__1026985),null);
 }
 } else {
-var padezh = cljs.core.first(s__1026264__$2);
+var padezh = cljs.core.first(s__1026983__$2);
 if(cljs.core.truth_((padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table)))){
-var map__1026290 = (padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table));
-var map__1026290__$1 = cljs.core.__destructure_map(map__1026290);
-var singular = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026290__$1,new cljs.core.Keyword(null,"singular","singular",1409933445));
-var plural = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026290__$1,new cljs.core.Keyword(null,"plural","plural",-881591021));
+var map__1027014 = (padezh.cljs$core$IFn$_invoke$arity$1 ? padezh.cljs$core$IFn$_invoke$arity$1(table) : padezh.call(null,table));
+var map__1027014__$1 = cljs.core.__destructure_map(map__1027014);
+var singular = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027014__$1,new cljs.core.Keyword(null,"singular","singular",1409933445));
+var plural = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027014__$1,new cljs.core.Keyword(null,"plural","plural",-881591021));
 var ending = (cljs.core.truth_(declines_like_adj_QMARK_)?slovarish.frontend.nouns.endings.adj_ending:slovarish.frontend.nouns.endings.noun_ending);
 return cljs.core.cons(cljs.core.with_meta(new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr","tr",-1424774646),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),(cljs.core.truth_(plural_only_QMARK_)?null:(function (){var temp__5757__auto__ = slovarish.frontend.nouns.noun_view.rowspan(padezh,gender,animate,new cljs.core.Keyword(null,"singular","singular",1409933445));
 if((temp__5757__auto__ == null)){
 return null;
 } else {
 var rs = temp__5757__auto__;
-return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(singular),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(singular)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,singular,(function (){var G__1026299 = cljs.core.deref(slovarish.frontend.state.input);
-var G__1026300 = gender;
-var G__1026301 = animate;
-var G__1026302 = padezh;
-var G__1026303 = new cljs.core.Keyword(null,"singular","singular",1409933445);
-return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1026299,G__1026300,G__1026301,G__1026302,G__1026303) : ending.call(null,G__1026299,G__1026300,G__1026301,G__1026302,G__1026303));
+return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(singular),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(singular)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,singular,(function (){var G__1027017 = cljs.core.deref(slovarish.frontend.state.input);
+var G__1027018 = gender;
+var G__1027019 = animate;
+var G__1027020 = padezh;
+var G__1027021 = new cljs.core.Keyword(null,"singular","singular",1409933445);
+return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1027017,G__1027018,G__1027019,G__1027020,G__1027021) : ending.call(null,G__1027017,G__1027018,G__1027019,G__1027020,G__1027021));
 })()], null)], null);
 }
 })()),(cljs.core.truth_((function (){var and__4251__auto__ = plural;
@@ -500,19 +500,19 @@ if((temp__5757__auto__ == null)){
 return null;
 } else {
 var rs = temp__5757__auto__;
-return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(plural),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(plural)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,plural,(function (){var G__1026311 = cljs.core.deref(slovarish.frontend.state.input);
-var G__1026312 = gender;
-var G__1026313 = animate;
-var G__1026314 = padezh;
-var G__1026315 = new cljs.core.Keyword(null,"plural","plural",-881591021);
-return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1026311,G__1026312,G__1026313,G__1026314,G__1026315) : ending.call(null,G__1026311,G__1026312,G__1026313,G__1026314,G__1026315));
+return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.word-form","td.word-form",-2126605889),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"rowSpan","rowSpan",826884002),rs,new cljs.core.Keyword(null,"data-score","data-score",1628263942),new cljs.core.Keyword(null,"score","score",-1963588780).cljs$core$IFn$_invoke$arity$1(plural),new cljs.core.Keyword(null,"class","class",-2030961996),slovarish.frontend.nouns.noun_view.add_classes(plural)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [slovarish.frontend.nouns.noun_view.display_form,plural,(function (){var G__1027026 = cljs.core.deref(slovarish.frontend.state.input);
+var G__1027027 = gender;
+var G__1027028 = animate;
+var G__1027029 = padezh;
+var G__1027030 = new cljs.core.Keyword(null,"plural","plural",-881591021);
+return (ending.cljs$core$IFn$_invoke$arity$5 ? ending.cljs$core$IFn$_invoke$arity$5(G__1027026,G__1027027,G__1027028,G__1027029,G__1027030) : ending.call(null,G__1027026,G__1027027,G__1027028,G__1027029,G__1027030));
 })()], null),((((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"nominative","nominative",148321668))) || (((cljs.core.not(animate)) && (cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(padezh,new cljs.core.Keyword(null,"accusative","accusative",-886115147)))))))?(cljs.core.truth_(sg_count)?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.count-form","span.count-form",1454942314),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),"Count form after numbers ending in \u0434\u0432\u0430, \u0442\u0440\u0438, \u0447\u0435\u0442\u044B\u0440\u0435"], null),"\u270C\uFE0F\uD83E\uDD1F\uD83D\uDD96 ",sg_count], null):(cljs.core.truth_(pl_count)?new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.count-form","span.count-form",1454942314),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"title","title",636505583),"Count form after numbers NOT ending in \u0434\u0432\u0430, \u0442\u0440\u0438, \u0447\u0435\u0442\u044B\u0440\u0435"], null),"\u270B\uD83D\uDE4C ",pl_count], null):null
 )):null)], null);
 }
-})():null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026263(cljs.core.rest(s__1026264__$2)));
+})():null)], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),padezh], null)),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026982(cljs.core.rest(s__1026983__$2)));
 } else {
-var G__1026430 = cljs.core.rest(s__1026264__$2);
-s__1026264__$1 = G__1026430;
+var G__1027140 = cljs.core.rest(s__1026983__$2);
+s__1026983__$1 = G__1027140;
 continue;
 }
 }
@@ -523,41 +523,41 @@ break;
 }
 }),null,null));
 });
-return iter__4652__auto__((function (){var G__1026316 = (function (){var fexpr__1026318 = cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.ordering));
-return (fexpr__1026318.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026318.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.nouns.noun_view.padezhi) : fexpr__1026318.call(null,slovarish.frontend.nouns.noun_view.padezhi));
+return iter__4652__auto__((function (){var G__1027035 = (function (){var fexpr__1027037 = cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.ordering));
+return (fexpr__1027037.cljs$core$IFn$_invoke$arity$1 ? fexpr__1027037.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.nouns.noun_view.padezhi) : fexpr__1027037.call(null,slovarish.frontend.nouns.noun_view.padezhi));
 })();
 if(cljs.core.truth_(plural_only_QMARK_)){
-return cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((3),G__1026316);
+return cljs.core.drop_last.cljs$core$IFn$_invoke$arity$2((3),G__1027035);
 } else {
-return G__1026316;
+return G__1027035;
 }
 })());
-})()),(cljs.core.truth_(adjectivals)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr.adjectival","tr.adjectival",1732627573),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"adjectival","adjectival",63148419),cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.wide.light","td.wide.light",1409358502),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"colSpan","colSpan",872137394),(2)], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026319(s__1026320){
+})()),(cljs.core.truth_(adjectivals)?new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr.adjectival","tr.adjectival",1732627573),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.row-header.sans.italic","th.row-header.sans.italic",-258857296),cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(slovarish.frontend.nouns.noun_view.case_name_sets,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"adjectival","adjectival",63148419),cljs.core.keyword.cljs$core$IFn$_invoke$arity$1(cljs.core.deref(slovarish.frontend.nouns.noun_view.naming))], null))], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"td.wide.light","td.wide.light",1409358502),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"colSpan","colSpan",872137394),(2)], null),cljs.core.doall.cljs$core$IFn$_invoke$arity$1((function (){var iter__4652__auto__ = (function slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1027043(s__1027044){
 return (new cljs.core.LazySeq(null,(function (){
-var s__1026320__$1 = s__1026320;
+var s__1027044__$1 = s__1027044;
 while(true){
-var temp__5753__auto__ = cljs.core.seq(s__1026320__$1);
+var temp__5753__auto__ = cljs.core.seq(s__1027044__$1);
 if(temp__5753__auto__){
-var s__1026320__$2 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(s__1026320__$2)){
-var c__4650__auto__ = cljs.core.chunk_first(s__1026320__$2);
+var s__1027044__$2 = temp__5753__auto__;
+if(cljs.core.chunked_seq_QMARK_(s__1027044__$2)){
+var c__4650__auto__ = cljs.core.chunk_first(s__1027044__$2);
 var size__4651__auto__ = cljs.core.count(c__4650__auto__);
-var b__1026322 = cljs.core.chunk_buffer(size__4651__auto__);
-if((function (){var i__1026321 = (0);
+var b__1027046 = cljs.core.chunk_buffer(size__4651__auto__);
+if((function (){var i__1027045 = (0);
 while(true){
-if((i__1026321 < size__4651__auto__)){
-var adj = cljs.core._nth(c__4650__auto__,i__1026321);
-cljs.core.chunk_append(b__1026322,(cljs.core.truth_(cljs.core.not_empty((function (){var G__1026328 = slovarish.frontend.display_inflections.destress(adj);
-var fexpr__1026327 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
-return (fexpr__1026327.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026327.cljs$core$IFn$_invoke$arity$1(G__1026328) : fexpr__1026327.call(null,G__1026328));
-})()))?cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.word-button","a.word-button",1642105003),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (i__1026321,adj,c__4650__auto__,size__4651__auto__,b__1026322,s__1026320__$2,temp__5753__auto__,map__1026262,map__1026262__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_){
+if((i__1027045 < size__4651__auto__)){
+var adj = cljs.core._nth(c__4650__auto__,i__1027045);
+cljs.core.chunk_append(b__1027046,(cljs.core.truth_(cljs.core.not_empty((function (){var G__1027052 = slovarish.frontend.display_inflections.destress(adj);
+var fexpr__1027051 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
+return (fexpr__1027051.cljs$core$IFn$_invoke$arity$1 ? fexpr__1027051.cljs$core$IFn$_invoke$arity$1(G__1027052) : fexpr__1027051.call(null,G__1027052));
+})()))?cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.word-button","a.word-button",1642105003),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (i__1027045,adj,c__4650__auto__,size__4651__auto__,b__1027046,s__1027044__$2,temp__5753__auto__,map__1026981,map__1026981__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_){
 return (function (){
 return slovarish.frontend.navigation.go_to_word.cljs$core$IFn$_invoke$arity$variadic(slovarish.frontend.display_inflections.destress(adj),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"target-pos","target-pos",1907947494),new cljs.core.Keyword(null,"adjective","adjective",441465450)], 0));
-});})(i__1026321,adj,c__4650__auto__,size__4651__auto__,b__1026322,s__1026320__$2,temp__5753__auto__,map__1026262,map__1026262__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_))
+});})(i__1027045,adj,c__4650__auto__,size__4651__auto__,b__1027046,s__1027044__$2,temp__5753__auto__,map__1026981,map__1026981__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_))
 ], null),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null)):cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.word-button","span.word-button",1723860172),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null))));
 
-var G__1026435 = (i__1026321 + (1));
-i__1026321 = G__1026435;
+var G__1027141 = (i__1027045 + (1));
+i__1027045 = G__1027141;
 continue;
 } else {
 return true;
@@ -565,20 +565,20 @@ return true;
 break;
 }
 })()){
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026322),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026319(cljs.core.chunk_rest(s__1026320__$2)));
+return cljs.core.chunk_cons(cljs.core.chunk(b__1027046),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1027043(cljs.core.chunk_rest(s__1027044__$2)));
 } else {
-return cljs.core.chunk_cons(cljs.core.chunk(b__1026322),null);
+return cljs.core.chunk_cons(cljs.core.chunk(b__1027046),null);
 }
 } else {
-var adj = cljs.core.first(s__1026320__$2);
-return cljs.core.cons((cljs.core.truth_(cljs.core.not_empty((function (){var G__1026336 = slovarish.frontend.display_inflections.destress(adj);
-var fexpr__1026335 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
-return (fexpr__1026335.cljs$core$IFn$_invoke$arity$1 ? fexpr__1026335.cljs$core$IFn$_invoke$arity$1(G__1026336) : fexpr__1026335.call(null,G__1026336));
-})()))?cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.word-button","a.word-button",1642105003),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (adj,s__1026320__$2,temp__5753__auto__,map__1026262,map__1026262__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_){
+var adj = cljs.core.first(s__1027044__$2);
+return cljs.core.cons((cljs.core.truth_(cljs.core.not_empty((function (){var G__1027056 = slovarish.frontend.display_inflections.destress(adj);
+var fexpr__1027055 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
+return (fexpr__1027055.cljs$core$IFn$_invoke$arity$1 ? fexpr__1027055.cljs$core$IFn$_invoke$arity$1(G__1027056) : fexpr__1027055.call(null,G__1027056));
+})()))?cljs.core.with_meta(new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"a.word-button","a.word-button",1642105003),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (adj,s__1027044__$2,temp__5753__auto__,map__1026981,map__1026981__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_){
 return (function (){
 return slovarish.frontend.navigation.go_to_word.cljs$core$IFn$_invoke$arity$variadic(slovarish.frontend.display_inflections.destress(adj),cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"target-pos","target-pos",1907947494),new cljs.core.Keyword(null,"adjective","adjective",441465450)], 0));
-});})(adj,s__1026320__$2,temp__5753__auto__,map__1026262,map__1026262__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_))
-], null),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null)):cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.word-button","span.word-button",1723860172),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null))),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1026319(cljs.core.rest(s__1026320__$2)));
+});})(adj,s__1027044__$2,temp__5753__auto__,map__1026981,map__1026981__$1,result,gender,declines_like_adj_QMARK_,table,plural_only_QMARK_,animate,sg_count,adjectivals,pl_count,singular_only_QMARK_))
+], null),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null)):cljs.core.with_meta(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.word-button","span.word-button",1723860172),slovarish.frontend.display_inflections.dstr.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([adj], 0))], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"key","key",-1516042587),adj], null))),slovarish$frontend$nouns$noun_view$assemble_table_$_iter__1027043(cljs.core.rest(s__1027044__$2)));
 }
 } else {
 return null;
@@ -594,16 +594,16 @@ return iter__4652__auto__(adjectivals);
  * This is the shell of the HTML table containing the declensions. It contains
  *   the header rows and columns.
  */
-slovarish.frontend.nouns.noun_view.noun_table = (function slovarish$frontend$nouns$noun_view$noun_table(p__1026346){
-var map__1026347 = p__1026346;
-var map__1026347__$1 = cljs.core.__destructure_map(map__1026347);
-var result = map__1026347__$1;
-var table = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"table","table",-564943036));
-var plural_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"plural-only?","plural-only?",727015978));
-var singular_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"singular-only?","singular-only?",-995012104));
-var indeclinable = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"indeclinable","indeclinable",1879418998));
-var verified_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"verified?","verified?",863527758));
-var stress_pattern = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1026347__$1,new cljs.core.Keyword(null,"stress-pattern","stress-pattern",933242495));
+slovarish.frontend.nouns.noun_view.noun_table = (function slovarish$frontend$nouns$noun_view$noun_table(p__1027060){
+var map__1027061 = p__1027060;
+var map__1027061__$1 = cljs.core.__destructure_map(map__1027061);
+var result = map__1027061__$1;
+var table = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"table","table",-564943036));
+var plural_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"plural-only?","plural-only?",727015978));
+var singular_only_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"singular-only?","singular-only?",-995012104));
+var indeclinable = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"indeclinable","indeclinable",1879418998));
+var verified_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"verified?","verified?",863527758));
+var stress_pattern = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__1027061__$1,new cljs.core.Keyword(null,"stress-pattern","stress-pattern",933242495));
 if(cljs.core.truth_(table)){
 return new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"table#noun-table","table#noun-table",-162367063),(cljs.core.truth_((function (){var or__4253__auto__ = plural_only_QMARK_;
 if(cljs.core.truth_(or__4253__auto__)){
@@ -617,9 +617,9 @@ e.preventDefault();
 cljs.core.reset_BANG_(slovarish.frontend.nouns.noun_view.ordering,e.target.value);
 
 return setTimeout(slovarish.frontend.navigation.color_cells_by_score,(25));
-})], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"traditional","traditional",772812166)], null),(function (){var G__1026354 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026354__$1 = (((G__1026354 instanceof cljs.core.Keyword))?G__1026354.fqn:null);
-switch (G__1026354__$1) {
+})], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"traditional","traditional",772812166)], null),(function (){var G__1027065 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027065__$1 = (((G__1027065 instanceof cljs.core.Keyword))?G__1027065.fqn:null);
+switch (G__1027065__$1) {
 case "english":
 return "trad. order";
 
@@ -629,12 +629,12 @@ return "\u0432 \u043E\u0431\u044B\u0447\u043D\u043E\u043C \u043F\u043E\u0440\u04
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026354__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027065__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"learners","learners",-86599832)], null),(function (){var G__1026355 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026355__$1 = (((G__1026355 instanceof cljs.core.Keyword))?G__1026355.fqn:null);
-switch (G__1026355__$1) {
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"learners","learners",-86599832)], null),(function (){var G__1027067 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027067__$1 = (((G__1027067 instanceof cljs.core.Keyword))?G__1027067.fqn:null);
+switch (G__1027067__$1) {
 case "english":
 return "learners\u2019 order";
 
@@ -644,12 +644,12 @@ return "\u0432 \u043F\u043E\u0440\u044F\u0434\u043A\u0435 \u0434\u043B\u044F \u0
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026355__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027067__$1)].join('')));
 
 }
-})()], null)], null)], null),(cljs.core.truth_(plural_only_QMARK_)?null:new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.column-header.sans","th.column-header.sans",2019543545),(function (){var G__1026357 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026357__$1 = (((G__1026357 instanceof cljs.core.Keyword))?G__1026357.fqn:null);
-switch (G__1026357__$1) {
+})()], null)], null)], null),(cljs.core.truth_(plural_only_QMARK_)?null:new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.column-header.sans","th.column-header.sans",2019543545),(function (){var G__1027068 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027068__$1 = (((G__1027068 instanceof cljs.core.Keyword))?G__1027068.fqn:null);
+switch (G__1027068__$1) {
 case "english":
 return "singular";
 
@@ -659,12 +659,12 @@ return "\u0435\u0434. \u0447.";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026357__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027068__$1)].join('')));
 
 }
-})()], null)),(cljs.core.truth_(singular_only_QMARK_)?null:(function (){var G__1026360 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026360__$1 = (((G__1026360 instanceof cljs.core.Keyword))?G__1026360.fqn:null);
-switch (G__1026360__$1) {
+})()], null)),(cljs.core.truth_(singular_only_QMARK_)?null:(function (){var G__1027072 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027072__$1 = (((G__1027072 instanceof cljs.core.Keyword))?G__1027072.fqn:null);
+switch (G__1027072__$1) {
 case "english":
 if(cljs.core.truth_(cljs.core.get_in.cljs$core$IFn$_invoke$arity$2(table,new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nominative","nominative",148321668),new cljs.core.Keyword(null,"plural","plural",-881591021),new cljs.core.Keyword(null,"irregular-stem?","irregular-stem?",2014776072)], null)))){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th.column-header.sans.irregular-form","th.column-header.sans.irregular-form",687281997),"plural ",new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span.note.italic.sans","span.note.italic.sans",-587424658),"(irregular stem)"], null)], null);
@@ -682,16 +682,16 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026360__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027072__$1)].join('')));
 
 }
 })())], null),new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"tr.stress","tr.stress",1549624366),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"th","th",-545608566),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"select","select",1147833503),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"name","name",1843675177),"naming",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref(slovarish.frontend.nouns.noun_view.naming),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (e){
 e.preventDefault();
 
 return cljs.core.reset_BANG_(slovarish.frontend.nouns.noun_view.naming,e.target.value);
-})], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"english","english",1087501909)], null),(function (){var G__1026364 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026364__$1 = (((G__1026364 instanceof cljs.core.Keyword))?G__1026364.fqn:null);
-switch (G__1026364__$1) {
+})], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"english","english",1087501909)], null),(function (){var G__1027076 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027076__$1 = (((G__1027076 instanceof cljs.core.Keyword))?G__1027076.fqn:null);
+switch (G__1027076__$1) {
 case "english":
 return "eng";
 
@@ -701,12 +701,12 @@ return "\u043F\u043E \u0430\u043D\u0433\u043B\u0438\u0439\u0441\u0441\u043A\u043
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026364__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027076__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"russian","russian",1887936458)], null),(function (){var G__1026365 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026365__$1 = (((G__1026365 instanceof cljs.core.Keyword))?G__1026365.fqn:null);
-switch (G__1026365__$1) {
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"russian","russian",1887936458)], null),(function (){var G__1027078 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027078__$1 = (((G__1027078 instanceof cljs.core.Keyword))?G__1027078.fqn:null);
+switch (G__1027078__$1) {
 case "english":
 return "rus";
 
@@ -716,12 +716,12 @@ return "\u043F\u043E \u0440\u0443\u0441\u0441\u043A\u0438\u043C \u043D\u0430\u04
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026365__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027078__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"rus-abbr","rus-abbr",-721404873)], null),(function (){var G__1026367 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026367__$1 = (((G__1026367 instanceof cljs.core.Keyword))?G__1026367.fqn:null);
-switch (G__1026367__$1) {
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"rus-abbr","rus-abbr",-721404873)], null),(function (){var G__1027080 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027080__$1 = (((G__1027080 instanceof cljs.core.Keyword))?G__1027080.fqn:null);
+switch (G__1027080__$1) {
 case "english":
 return "abbr";
 
@@ -731,12 +731,12 @@ return "\u043F\u043E \u0430\u0431\u0431\u0440\u0435\u0432\u0438\u0430\u0442\u044
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026367__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027080__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"verb","verb",-1492655803)], null),(function (){var G__1026370 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026370__$1 = (((G__1026370 instanceof cljs.core.Keyword))?G__1026370.fqn:null);
-switch (G__1026370__$1) {
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"verb","verb",-1492655803)], null),(function (){var G__1027086 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027086__$1 = (((G__1027086 instanceof cljs.core.Keyword))?G__1027086.fqn:null);
+switch (G__1027086__$1) {
 case "english":
 return "verbs";
 
@@ -746,12 +746,12 @@ return "\u043F\u043E \u0432\u0441\u043F\u043E\u043C\u043E\u0433\u0430\u0442\u043
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026370__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027086__$1)].join('')));
 
 }
-})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"question","question",-1411720117)], null),(function (){var G__1026372 = cljs.core.deref(slovarish.frontend.state.display_language);
-var G__1026372__$1 = (((G__1026372 instanceof cljs.core.Keyword))?G__1026372.fqn:null);
-switch (G__1026372__$1) {
+})()], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"option","option",65132272),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"value","value",305978217),new cljs.core.Keyword(null,"question","question",-1411720117)], null),(function (){var G__1027088 = cljs.core.deref(slovarish.frontend.state.display_language);
+var G__1027088__$1 = (((G__1027088 instanceof cljs.core.Keyword))?G__1027088.fqn:null);
+switch (G__1027088__$1) {
 case "english":
 return "q\u2019s";
 
@@ -761,7 +761,7 @@ return "\u043F\u043E \u0432\u043E\u043F\u0440\u043E\u0441\u0430\u043C";
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1026372__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1027088__$1)].join('')));
 
 }
 })()], null)], null)], null),(cljs.core.truth_((function (){var or__4253__auto__ = plural_only_QMARK_;
