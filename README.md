@@ -1,0 +1,1 @@
+# Slovarish web app

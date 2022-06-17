@@ -1,0 +1,1159 @@
+/* || GENERAL STYLES AND COLORS */
+
+body, html {
+  background-color: #fffcf5;
+}
+* {
+  box-sizing: border-box;
+}
+#root {
+  margin: auto;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-weight: 300;
+}
+#container {
+  text-align: center;
+  padding: 25px 0;
+  width: min(75%, 1000px);
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+h1 {
+  font-family: 'Jost', 'Futura PT', 'Futura', 'SF Pro', 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: min(5vw, 28px);
+  letter-spacing: 0.03em;
+}
+td, th {
+  border-radius: 5px;
+}
+select {
+  background-color: #eee;
+  border: 0px;
+  border-radius: 5px;
+  padding: 2px;
+  font-family: 'Jost', 'Futura PT', 'Futura', 'SF Pro', 'Inter', sans-serif;
+  font-style: italic;
+}
+.flex {
+  display: flex;
+}
+.flex.row {
+  align-items: center;
+  justify-content: center;
+}
+.italic {
+  font-variant: normal !important;
+  font-style: italic;
+  font-weight: 300;
+}
+.sans {
+  font-family: 'Jost', 'Futura PT', 'Futura', 'SF Pro', 'Inter', sans-serif;
+}
+.serif {
+  font-family: "Source Serif Pro", Georgia, serif;
+}
+.small-caps {
+  font-variant: small-caps;
+  font-size: 110%;
+  letter-spacing: 0.08em;
+}
+.note {
+  font-size: 80%;
+  letter-spacing: 0.03em;
+}
+.fleeting-vowel {
+  color: red;
+  font-weight: 700;
+}
+.ending {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: clamp(2px, 0.5vw, 5px);
+  transition: text-decoration-color 0.25s;
+}
+.masculine, .verb-entry .word-form.masculine.past.irregular-form {
+  background-color: #bdd6ff;
+}
+.masculine.light, .verb-entry .word-form.masculine.past {
+  background-color: #eff5ff;
+}
+.feminine, .verb-entry .word-form.feminine.past.unpredictable-stress {
+  background-color: #ffc2e9;
+}
+.feminine.light {
+  background-color: #fff0fa;
+}
+.neuter, .indefinite, .verb-entry.indefinite .word-form.present.unpredictable-stress,
+.verb-entry .word-form.neuter.past.unpredictable-stress {
+  background-color: #fff0a6;
+}
+.neuter.light, .verb-entry.indefinite .word-form {
+  background-color: #fff9dd;
+}
+.common, .perfective, .verb-entry.perfective .word-form.present.unpredictable-stress, #adj-table .word-form.plural {
+  background-color: #deccf4;
+}
+.common.light, .verb-entry.perfective .word-form, #adj-table .word-form.plural.light {
+  background-color: #f7f2fc;
+}
+.default {
+  background-color: #eee;
+}
+.definite, .imperfective,
+.imperfective .word-form.present.unpredictable-stress,
+.definite .word-form.present.unpredictable-stress,
+.word-form.imperfective, .word-form.noun.irregular-form {
+  background-color: #D7EBBA;
+}
+.verb-entry.definite .word-form, .verb-entry.imperfective .word-form {
+  background-color: #f0f7e5;
+}
+.biaspectual {
+  background-image: linear-gradient(to right, #D7EBBA , #deccf4);
+}
+.verb-entry.biaspectual .word-form:not(.masculine, .feminine, .neuter, .default) {
+  background-image: linear-gradient(to right, #f0f7e5, #f7f2fc);
+}
+#adj-table .triple-gradient.unpredictable-stress {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFFCF5FF' stroke-width='7' stroke-dasharray='4%2c4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e"),
+                    linear-gradient(to right, #ffc2e9, #fff0a6, #deccf4);
+}
+.triple-gradient.light {
+  background-image: linear-gradient(to right, #fff0fa, #fff9dd, #f7f2fc);
+}
+.quad-gradient.light {
+  background-image: linear-gradient(to right, #eff5ff, #fff0fa, #fff9dd, #f7f2fc);
+}
+.empty {
+  background: none !important;
+}
+
+.icon {
+  display: inline-block;
+  border-radius: 15px;
+  margin: 0 1px;
+  width: min(25px, 3vw);
+  height: min(25px, 3vw);
+  font-weight: 700; /* for gender emojis */
+  transition: background-color 0.25s;
+}
+.icon:hover {
+  cursor: help;
+  background-color: white;
+}
+.word-button, .sense {
+  text-decoration: none;
+  font-family: "Source Serif Pro", Georgia, serif;
+  letter-spacing: normal;
+  font-weight: 300;
+  color: #666;
+  background: #eee;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.25s, color 0.25s;
+}
+.word-button {
+  padding-top: min(0.2vw, 2px);
+  padding-bottom: min(0.2vw, 2px);
+  padding-left: min(0.8vw, 8px);
+  padding-right: min(0.8vw, 8px);
+  margin-top: min(0.5vw, 5px);
+  margin-bottom: min(0.5vw, 5px);
+  margin-left: min(0.1vw, 5px);
+  margin-right: min(0.1vw, 5px);
+}
+a.word-button {
+  cursor: pointer;
+}
+a.word-button:hover, a.word-button:active, a.sense:hover, a.participle:hover > .word-form {
+  background-image: none !important; /* !important overwrites the biaspectual gradient */
+  background-color: #0D1F2D;
+  color: white;
+  font-weight: 700;
+}
+#random-word-button {
+  position: fixed;
+  z-index: 50;
+  display: none;
+}
+#random-word-button > span {
+  border-radius: 30vw;
+  background: #fffcf5;
+}
+.random-word-button-instruction {
+  display: none;
+}
+.press-enter-instruction {
+  display: inline;
+}
+@media (any-hover: none) {
+  .random-word-button-instruction {
+    display: inline;
+  }
+  .press-enter-instruction {
+    display: none;
+  }
+  @media screen and (orientation:landscape) {
+    #random-word-button {
+      font-size: 5vw;
+      right: 3vw;
+      top: 15vh;
+      display: block;
+    }
+  }
+  @media screen and (orientation:portrait) {
+    #random-word-button {
+      font-size: 8vw;
+      display: flex;
+      left: 0;
+      bottom: 5vh;
+      z-index: 50;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+@media (any-hover: none) {
+  #header, #header *, #suggestions, .gloss-wrapper, .gloss-wrapper *, .alternate-forms-trigger {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+}
+
+/* || INTRO */
+
+#mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fffcf5;
+  text-align: center;
+}
+#mask > * {
+  margin: auto;
+}
+#credits {
+  position: fixed;
+  display: block;
+  background-color: #eee;
+  text-align: center;
+  width: min(60vw, 500px);
+  font-size: clamp(12px, 2vw, 16px);
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: -1;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.25s ease-out;
+}
+#credits.visible {
+  opacity: 1;
+  z-index: 100;
+}
+#credits a, #credits a:visited {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+  font-weight: 300;
+  color: black;
+  line-height: 1.4em;
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 2px 0px;
+  transition: padding 0.25s, color 0.25s, font-weight 0.25s, background-color 0.25s;
+}
+#credits a::after {
+  content: "\00A0➡️ ";
+}
+#credits a:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  padding: 4px 5px;
+  background-color: #0D1F2D;
+}
+#legend, #get-started {
+  text-align: center;
+  display: block;
+  width: 75%;
+  max-width: 600px;
+  line-height: 1.4em;
+  margin: 0 auto;
+}
+#get-started {
+  margin-top: 35px;
+}
+#legend > div {
+  margin: 10px 0;
+}
+#legend .word-form {
+  margin: 0 3px;
+  padding: 7px 7px 7px 12px !important;
+  transition: none;
+  direction: ltr;
+}
+#legend .word-form:not(.irregular-form):not(.unpredictable-stress) {
+  padding: 7px 12px !important;
+}
+
+/* || PAGE HEADER (the row above the input form) */
+
+#header {
+  width: 100%;
+  align-items: center;
+}
+#pos-buttons {
+  margin: 10px 0;
+  font-size: clamp(10px, 2.5vw, 20px);
+  flex-grow: 1;
+  z-index: 10;
+}
+#pos-buttons .word-button {
+  font-family: 'Jost', 'Futura PT', 'Futura', 'SF Pro', 'Inter', sans-serif;
+  padding: 2px 10px;
+  font-weight: 700;
+  margin-left: min(0.3vw, 5px);
+  margin-right: min(0.3vw, 5px);
+}
+#header .word-button.current, .sense.current {
+  color: white;
+  font-weight: 700;
+  background-color: #0D1F2D;
+}
+#header a.word-button:hover, a.sense:active {
+  background-color: #D7EBBA;
+  color: black;
+  font-weight: 700;
+}
+.toggle-container .option {
+  font-weight: 700;
+  font-size: clamp(14px, 2vw, 16px);
+  font-family: 'Jost', 'Futura PT', 'Futura', 'SF Pro', 'Inter', sans-serif;
+}
+.toggle-container .option:first-child {
+  padding-right: 10px;
+}
+.toggle-container .option:last-child {
+  padding-left: 10px;
+}
+.toggle { /* The switch - the box around the slider */
+  position: relative;
+  display: inline-block;
+  width: clamp(30px, 8vw, 60px);
+  height: clamp(16px, 5vw, 34px);
+  flex-grow: 0;
+}
+.toggle input { /* Hide default HTML checkbox */
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: clamp(14px, 3.55vw, 26px);
+  width: clamp(14px, 3.55vw, 26px);
+  left: clamp(2px, 1vw, 4px);
+  bottom: clamp(2px, 1vw, 4px);
+  background-color: white;
+  -webkit-transition: transform .2s;
+  transition: transform .2s;
+  border-radius: 50%;
+}
+input[name=stress-marks]:checked + .slider {
+  background-color: #0D1F2D; /* "on" color */
+}
+input[name=stress-marks]:focus + .slider {
+  box-shadow: 0 0 1px #0D1F2D; /* "on" color */
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(clamp(14px, 3vw, 26px));
+  -ms-transform: translateX(clamp(14px, 3vw, 26px));
+  transform: translateX(clamp(14px, 3vw, 26px));
+}
+
+/* || WORD INPUT FORM */
+
+form li {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#word-input-wrapper {
+  position: relative;
+}
+#word-input {
+  text-align: center;
+  font-family: "Source Serif Pro", Georgia, serif;
+  font-weight: 200;
+  padding-bottom: 10px;
+  height: min(110px, 12vw);
+  font-size: 80px;
+  font-size: clamp(12px, 7vw, 80px);
+  border: 0;
+  outline: none;
+  width: 100%;
+  display: block;
+  position: relative;
+  border-radius: 10px;
+  transition: background-color 0.25s, color 0.25s;
+}
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
+  #word-input {
+    padding-bottom: 15px;
+  }
+}
+#word-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #999;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input::-moz-placeholder { /* Firefox 19+ */
+  color: #999;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:-ms-input-placeholder { /* IE 10+ */
+  color: #999;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:-moz-placeholder { /* Firefox 18- */
+  color: #999;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:focus::-moz-placeholder { /* Firefox 19+ */
+  color: #ccc;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:focus:-ms-input-placeholder { /* IE 10+ */
+  color: #ccc;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#word-input:focus:-moz-placeholder { /* Firefox 18- */
+  color: #ccc;
+  font-size: clamp(12px, 6vw, 60px);
+}
+#senses, .icons, .verb-view-toggle-menu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* https://stackoverflow.com/a/53702732 */
+  display: flex;
+}
+.icons, .verb-view-toggle-menu {
+  right: 5%;
+  flex-direction: column;
+}
+#senses {
+  left: 5%;
+}
+@media only screen and (max-width: 650px) {
+  #senses {
+    top: 90%;
+    transform: translateY(-90%);
+    left: 2%;
+  }
+  .verb-view-toggle-menu {
+    top: 90%;
+    transform: translateY(-90%);
+    right: 2%;
+  }
+}
+#senses > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(30px, 3vw);
+  height: min(30px, 3vw);
+  font-size: min(16px, 2vw);
+  margin-left: clamp(1px, 0.5vw, 5px);
+  margin-right: clamp(1px, 0.5vw, 5px);
+}
+#suggestions {
+  margin-bottom: 5px;
+  margin-top: clamp(24px, 3vw, 30px);
+  min-height: min(2vw, 25px);
+  font-size: clamp(16px, 2vw, 20px);
+  text-align: center;
+}
+#suggestions > span:first-child {
+  font-size: 80%
+}
+.icons .icon {
+  font-size: clamp(8px, 2.3vw, 22px);
+  margin-top: min(3px, 0.3vw);
+  margin-bottom: min(3px, 0.3vw);
+}
+
+/* || GLOSSES */
+
+.gloss-wrapper {
+  width: 100%;
+}
+#word-input-wrapper .gloss-wrapper {
+  position: absolute;
+  bottom: -20px;
+}
+@supports (-webkit-touch-callout: none) {
+  /* CSS specific to iOS devices https://stackoverflow.com/questions/30102792/css-media-query-to-target-only-ios-devices */
+  #word-input-wrapper .gloss-wrapper {
+    bottom: -25px;
+  }
+}
+.primary-gloss {
+  font-size: clamp(12px, 2vw, 16px);
+  padding: 5px 15px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: default;
+  transition: background-color 0.25s;
+  display: inline-block;
+  max-width: min(75%, 1000px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.primary-gloss.more-info, .primary-gloss.down-arrow {
+  cursor: pointer;
+}
+/* We want the down-arrow to come AFTER the text, but putting it in ::after
+makes it invisible because of overflow: hidden; on .primary-gloss */
+.primary-gloss.more-info::before, .primary-gloss.down-arrow::before {
+  content: "⬇️ ";
+  float: right;
+  padding-left: 5px;
+}
+.gloss-wrapper strong {
+  font-weight: 700; /* Firefox doesn't automatically render strong as bold? */
+}
+.gloss-note {
+  font-weight: 300;
+}
+.gloss-cyr {
+  font-weight: 300;
+  text-decoration: underline;
+  text-decoration-color: #333;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.gloss-popup {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  top: 35px;
+  z-index: 20;
+  visibility: hidden;
+}
+.gloss-list {
+  max-height: 0;
+  z-index: 10;
+  overflow: hidden;
+  background: #eee;
+  text-align: left;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  white-space: normal;
+}
+.gloss-list li:first-child .gloss-main {
+  font-weight: 700;
+}
+#word-input-wrapper .gloss-list {
+  width: min(500px, 50vw);
+}
+.primary-gloss.more-info:active .gloss-popup, .primary-gloss.down-arrow:active .gloss-popup {
+  visibility: visible;
+}
+.primary-gloss.more-info:active .gloss-list, .primary-gloss.down-arrow:active .gloss-list {
+  max-height: 1000px;
+  transition: max-height 0.5s, padding 0.1s, box-shadow 0.1s;
+}
+@media (any-hover: hover) {
+  .primary-gloss.more-info:hover .gloss-popup, .primary-gloss.down-arrow:hover .gloss-popup {
+    visibility: visible;
+  }
+  .primary-gloss.more-info:hover .gloss-list, .primary-gloss.down-arrow:hover .gloss-list {
+    max-height: 1000px;
+    transition: max-height 0.5s, padding 0.1s, box-shadow 0.1s;
+  }
+}
+.gloss-list li {
+  padding: 5px 0;
+}
+
+/* || WORD FORM + MARKED WORD FORMS */
+
+.word-form {
+  display: inline-block;
+  padding-top: min(1vw, 10px);
+  padding-bottom: min(1vw, 10px);
+  padding-left: min(2vw, 20px);
+  padding-right: min(2vw, 20px);
+  border-radius: 5px;
+  text-align: left;
+  transition: background-color 0.25s, color 0.25s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  direction: rtl; /* https://davidwalsh.name/css-ellipsis-left */
+}
+.word-form.irregular-form { /* legend */
+  /* https://kovart.github.io/dashed-border-generator/ */
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFFCF5FF' stroke-width='6' stroke-dasharray='10%2c 20' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+.word-form.past.irregular-form { /* verb view */
+  font-weight: 700;
+}
+.word-form.irregular-form::before { /* ::before not ::after b/c of direction: rtl */
+  content: "\26A1";
+  float: right;
+  margin: 0 5px;
+}
+.word-form.unpredictable-stress {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23FFFCF5FF' stroke-width='7' stroke-dasharray='4%2c4' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+.word-form.unpredictable-stress:not(.present, .short-form)::before {
+  /* Emoji only for nouns and past tense verbs */
+  content: "⚠️";
+  display: block;
+  float: right;
+  margin-right: 5px;
+}
+#adj-table .column-header.unpredictable-stress::after {
+  font-family: serif;
+  content: "⚠️";
+  margin-left: max(0.5vw, 5px);
+}
+#noun-table thead th.irregular-form {
+  background-color: #D7EBBA;
+}
+#noun-table thead th.irregular-form::after {
+  content: "\26A1";
+  display: block;
+  float: right;
+  margin-right: 10px;
+}
+
+/* || VERB VIEW and some shared styles with the other views */
+
+.verb-entry {
+  background: none;
+  width: 100%;
+  margin-bottom: 30px;
+  font-size: clamp(13px, 1.8vw, 22px);
+  display: grid;
+  grid-template-columns: max-content 1fr 1fr max-content 1fr 1fr auto;
+  grid-template-rows: auto auto auto;
+  column-gap: 2px;
+  row-gap: 2px;
+}
+.top-left, .top-right {
+  display: inline-flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+.top-left { /* yes, this isn't exactly the top left corner */
+  grid-column: 2 / span 2;
+}
+.top-right {
+  grid-column: 5 / span 3;
+}
+.verb-entry .infinitive {
+  font-weight: 700;
+  font-size: min(3vw, 24px);
+  padding: 3px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.infinitive .icon {
+  margin: 0px 2px 0px -4px;
+  padding: 1px 1px 0 0;
+  font-size: 85%;
+}
+.infinitive.biaspectual .icon {
+  width: min(50px, 6vw);
+  border-radius: 5px;
+}
+.verb-entry .primary-gloss, #adj-table .primary-gloss {
+  border-radius: 5px;
+  z-index: 5;
+  max-width: 100%;
+}
+.verb-entry .gloss-popup { /* fixing a minor placement issue */
+  top: 40px;
+  z-index: 5;
+  width: 100%;
+}
+.row1 {
+  grid-row-start: 3;
+}
+.row2 {
+  grid-row-start: 4;
+}
+.row3 {
+  grid-row-start: 5;
+}
+.present {
+  grid-column-start: 2;
+  z-index: 2;
+}
+.past {
+  grid-column: 5 / span 2;
+}
+.alternate-forms-trigger {
+  cursor: pointer;
+  border-radius: 5px;
+}
+@media (any-hover: hover) {
+  .verb-entry .primary, .verb-entry .alternate-forms-trigger:hover ~ .alternate {
+    z-index: 2;
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: transform 0.3s, opacity 0.1s;
+  }
+}
+@media (any-hover: none) {
+  .verb-entry .primary, .verb-entry .alternate-forms-trigger:active ~ .alternate {
+    z-index: 2;
+    opacity: 1;
+    transform: rotateY(0deg);
+    transition: transform 0.3s, opacity 0.1s;
+  }
+}
+.verb-entry .alternate {
+  opacity: 0;
+  transform: rotateY(0.5turn);
+}
+@media (any-hover: hover) {
+  .verb-entry .alternate-forms-trigger:hover ~ .primary {
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.1s;
+    transform: rotateY(-0.5turn);
+  }
+}
+@media (any-hover: none) {
+  .verb-entry .alternate-forms-trigger:active ~ .primary {
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.1s;
+    transform: rotateY(-0.5turn);
+  }
+}
+.verb-entry .double-row {
+  grid-row-end: span 2;
+  display: flex;
+  justify-content: center;
+  text-align: center;  /* for hyphenated lines */
+  align-items: center;
+  white-space: normal;
+  direction: ltr;
+}
+.verb-entry .triple-row {
+  grid-row-end: span 3;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  white-space: normal;
+  direction: ltr;
+}
+.full-width {
+  grid-column-end: span 2;
+}
+.verb-entry .half-width {
+  grid-column-end: span 1;
+}
+.past.neuter.half-width {
+  grid-column: 5 / span 1;
+}
+.past.plural.half-width {
+  grid-column: 6 / span 1;
+}
+.participle {
+  grid-column-end: span 2;
+}
+a.participle > .word-form {
+  width: 100%;
+  cursor: pointer;
+}
+a.participle > .word-form::after {
+  content: "➡️ ";
+  float: right;
+}
+.column-header {
+  grid-column-end: span 2;
+  padding: 5px;
+  font-weight: 700;
+  align-self: center;
+  font-size: min(2vw, 18px);
+  letter-spacing: 0.06em;
+}
+.verb-entry .column-header {
+  grid-row-start: 2;
+}
+.column-header.half-width {
+  grid-row-end: span 1 !important;
+}
+.row-header, .verb-entry .no-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  letter-spacing: 0.03em;
+  padding: 0 15px;
+}
+.row-header, .no-form {
+  font-size: clamp(12px, 1.4vw, 16px);
+}
+.row-header.left {
+  grid-column-start: 1;
+}
+.row-header.middle {
+  grid-column-start: 4;
+}
+.conjugation-model .word-button, .short-forms .word-button {
+  margin-right: 0; /* Ensures this is centered */
+  font-size: clamp(12px, 2.5vw, 16px);
+}
+.dont-confuse {
+  float: right;
+  font-size: 80%;
+  direction: ltr;
+}
+.dont-confuse > span:first-child {
+  font-size: 80%;
+}
+.imperative {
+  grid-column: -2 / span 1;
+}
+
+/* || NOUN VIEW */
+
+#noun-table {
+  width: 100%;
+  font-size: clamp(16px, 3vw, 24px);
+  table-layout: fixed;
+}
+#noun-table .column-header {
+  font-size: 75%;
+}
+th.row-header, #adj-table .row-header { /* Slightly bigger than the verb-view one */
+  display: table-cell;
+  font-size: clamp(14px, 1.4vw, 18px);
+}
+#noun-table tbody tr { /* Keeps the row height uniform in learners' ordering */
+  height: min(5vw, 50px);
+}
+#noun-table tr.stress th {
+  padding: 2px;
+}
+#noun-table td {
+  display: table-cell;
+  padding-right: min(1vw, 10px);
+  width: 100%;
+}
+#noun-table td.wide {
+  text-align: center;
+}
+.uncommon {
+  color: #999 !important;
+  font-weight: 200;
+}
+.uncommon .fleeting-vowel {
+  font-weight: 300;
+  color: #ff9e9e;
+}
+td.same-as-base {
+  font-weight: 700;
+}
+#noun-table tr.adjectival td { /* Don't truncate the relational-adj word buttons */
+  overflow: visible;
+}
+tr.adjectival .word-button {
+  padding: 5px 10px;
+  margin: 4px;
+}
+tr.adjectival a.word-button::after {
+  content: "➡️ ";
+  float: right;
+  margin-left: 5px;
+}
+.count-form {
+  color: black;
+  display: inline-flex;
+  font-size: 80%;
+  font-weight: 700;
+  outline: 2px dashed #eee;
+  float: right;
+  margin-right: 5px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: help;
+  background-color: #eee;
+}
+
+/* || ADJECTIVE VIEW */
+
+#adj-table {
+  width: 100%;
+  font-size: clamp(16px, 3vw, 24px);
+}
+#adj-table a.word-button::after {
+  content: "➡️ ";
+  float: right;
+  margin-left: 5px;
+}
+.short-forms .primary-gloss.serif {
+  font-weight: 300;
+  letter-spacing: normal;
+  margin: 4px 0;
+}
+#adj-table .short-forms-header {
+  /* display: flex; /* important for gloss placement */
+  position: relative; /* important for gloss placement */
+  align-items: center;
+  align: center;
+  font-size: min(2vw, 18px);
+}
+.short-forms-header .gloss-popup {
+  top: 30px;
+  z-index: 5;
+}
+.short-forms.row {
+  margin-bottom: 10px;
+  /*justify-content: space-around !important;*/
+}
+.short-forms .column {
+  /* flex: 1; /* Stretches to full width */
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  margin-right: 1px;
+  flex-direction: column;
+  transition: flex 0.25s ease-out;
+  min-width: 0; /* https://css-tricks.com/flexbox-truncated-text/ */
+}
+.short-forms .column:last-child {
+  margin: 0;
+}
+.short-form {
+  text-align: center;
+  grid-row: 1;
+  grid-column: 1;
+}
+#adj-table .short-form.no-form {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#adj-table .gloss-wrapper {
+  margin-bottom: 2px;
+}
+.participle-type + .word-button {
+  margin: 0 0 0.5vw 0.5vw;
+}
+
+@media (any-hover: hover) {
+  .short-forms .primary, .alternate-forms-trigger:hover ~ .short-forms .column .alternate {
+    z-index: 2;
+    opacity: 1;
+    transform: rotateX(0deg);
+    transition: transform 0.3s, opacity 0.1s;
+  }
+}
+@media (any-hover: none) {
+  .short-forms .primary, .alternate-forms-trigger:active ~ .short-forms .column .alternate {
+    z-index: 2;
+    opacity: 1;
+    transform: rotateX(0deg);
+    transition: transform 0.3s, opacity 0.1s;
+  }
+}
+.short-forms .alternate {
+  opacity: 0;
+  transform: rotateX(0.5turn);
+}
+@media (any-hover: hover) {
+  .alternate-forms-trigger:hover ~ .short-forms .column .primary {
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.1s;
+    transform: rotateX(-0.5turn);
+  }
+}
+@media (any-hover: none) {
+  .alternate-forms-trigger:active ~ .short-forms .column .primary {
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.1s;
+    transform: rotateX(-0.5turn);
+  }
+}
+
+.long-forms {
+  margin-bottom: 20px;
+}
+.long-forms .column {
+  flex: 1;
+  transition: flex 0.25s ease-out;
+  align-self: flex-start;
+  min-width: 0; /* https://css-tricks.com/flexbox-truncated-text/ */
+}
+.top-row {
+  background: none; /* No background behind the emojis */
+  display: flex;
+  cursor: pointer;
+  overflow: visible;
+  align-items: center;
+  z-index: 10;
+}
+.top-row > * {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.top-row .word-form {
+  direction: ltr;
+  padding-left: 0;
+  padding-right: 0;
+}
+.top-row .word-form::before {
+  content: "-";
+}
+.oblique-drawer {
+  margin-top: 2px;
+  flex-direction: column;
+  background: none;
+  display: flex;
+  height: 0;
+  /* Transition OFF */
+  transition: height 0.4s ease-in, max-height 0.4s ease-in;
+  align-self: flex-start;
+  flex: 1;
+}
+.long-forms .column:hover {
+  flex-grow: 3;
+}
+.column:hover .oblique-drawer {
+  opacity: 1;
+  width: 100%;
+  height: min(35vw, 250px); /* Allows flex heights to be defined for various cells */
+  /* Transition ON */
+  transition: height 0.2s ease-out, max-height 0.2s ease-out 0.2s;
+}
+.column:hover .oblique-drawer.feminine {
+  height: min(21vw, 150px);
+}
+.column:hover .oblique-drawer.plural {
+  height: min(28vw, 200px);
+}
+.column:hover .oblique {
+  z-index: 1;
+  opacity: 1;
+  /* Transition ON */
+  transition: opacity 0.3s ease-out, z-index 0.1s;
+}
+.oblique {
+  opacity: 0;
+  color: #666;
+  /* flex: 1; /* Stretch cells evenly vertically */
+  z-index: -1; /* Necessary to make the element unhoverable after it folds back up. */
+  margin: 1px 0;
+  justify-content: left;
+  /* Transition OFF */
+  transition: opacity 0.3s ease-in, z-index 0.1s linear 0.25s;
+}
+.oblique .ending {
+  color: black;
+}
+.oblique-drawer .oblique:first-child {
+  font-weight: 700;
+  color: black;
+}
+.oblique-drawer.masculine .oblique:first-child::before, .oblique-drawer.plural .oblique:first-child::before {
+  content: "🤖";
+  float: right;
+  margin-left: 5px;
+}
+.oblique-drawer.masculine .oblique:nth-child(2)::before {
+  content: "👨";
+  float: right;
+  margin-left: 5px;
+}
+.oblique-drawer.plural .oblique:nth-child(2)::before {
+  content: "👫";
+  float: right;
+  margin-left: 5px;
+}
+.more-forms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.more-forms > div {
+  margin: 1px 0;
+}
+.more-forms .note {
+  align-self: center;
+  padding-right: 5px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 650px) {
+  .long-forms .top-row {
+    display: inline;
+  }
+  .column:hover {
+    flex-grow: 4;
+  }
+  .short-forms, .short-forms-header {
+    flex-direction: column;
+    align-items: stretch !important;
+  }
+  .short-forms .column {
+    display: flex;
+    flex-direction: row;
+    cursor: default;
+    margin: 0;
+  }
+  .short-forms .alternate {
+    opacity: 1;
+    transform: none;
+  }
+  .short-form {
+    flex: 1;
+  }
+  .short-form.single {
+    flex: 2;
+  }
+  #adj-table .alternate-forms-trigger {
+    display: none;
+  }
+}
