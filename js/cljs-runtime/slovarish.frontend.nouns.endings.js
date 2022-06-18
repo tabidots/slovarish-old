@@ -15,20 +15,20 @@ return (3);
 if(cljs.core.truth_(cons_stem_QMARK_)){
 return (2);
 } else {
-if(cljs.core.truth_((function (){var fexpr__1025770 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, ["\u0438",null,"\u044F",null,"\u0430",null], null), null);
-return (fexpr__1025770.cljs$core$IFn$_invoke$arity$1 ? fexpr__1025770.cljs$core$IFn$_invoke$arity$1(ending) : fexpr__1025770.call(null,ending));
+if(cljs.core.truth_((function (){var fexpr__74457 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, ["\u0438",null,"\u044F",null,"\u0430",null], null), null);
+return (fexpr__74457.cljs$core$IFn$_invoke$arity$1 ? fexpr__74457.cljs$core$IFn$_invoke$arity$1(ending) : fexpr__74457.call(null,ending));
 })())){
 return (1);
 } else {
-if(cljs.core.truth_((function (){var fexpr__1025771 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 5, ["\u0451",null,"\u044B",null,"\u0439",null,"\u043E",null,"\u0435",null], null), null);
-return (fexpr__1025771.cljs$core$IFn$_invoke$arity$1 ? fexpr__1025771.cljs$core$IFn$_invoke$arity$1(ending) : fexpr__1025771.call(null,ending));
+if(cljs.core.truth_((function (){var fexpr__74458 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 5, ["\u0451",null,"\u044B",null,"\u0439",null,"\u043E",null,"\u0435",null], null), null);
+return (fexpr__74458.cljs$core$IFn$_invoke$arity$1 ? fexpr__74458.cljs$core$IFn$_invoke$arity$1(ending) : fexpr__74458.call(null,ending));
 })())){
 return (2);
 } else {
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(ending,"\u044C")){
-var G__1025772 = gender;
-var G__1025772__$1 = (((G__1025772 instanceof cljs.core.Keyword))?G__1025772.fqn:null);
-switch (G__1025772__$1) {
+var G__74459 = gender;
+var G__74459__$1 = (((G__74459 instanceof cljs.core.Keyword))?G__74459.fqn:null);
+switch (G__74459__$1) {
 case "masculine":
 return (2);
 
@@ -42,7 +42,7 @@ return (3);
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1025772__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__74459__$1)].join('')));
 
 }
 } else {
@@ -60,8 +60,8 @@ slovarish.frontend.nouns.endings.noun_ending = (function slovarish$frontend$noun
 if(cljs.core.truth_(cljs.core.re_find(/[ая]нин$/,word))){
 return /(?:и\u0301?н.*?|е|ам|ами|ах)$/;
 } else {
-if(cljs.core.truth_((function (){var or__4253__auto__ = (function (){var fexpr__1025791 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, ["\u043C\u044B\u0448\u043E\u043D\u043E\u043A",null,"\u0434\u0435\u0432\u0447\u0430\u0442\u0430",null,"\u043C\u0435\u0434\u0432\u0435\u0436\u043E\u043D\u043E\u043A",null,"\u0440\u0435\u0431\u044F\u0442\u0430",null], null), null);
-return (fexpr__1025791.cljs$core$IFn$_invoke$arity$1 ? fexpr__1025791.cljs$core$IFn$_invoke$arity$1(word) : fexpr__1025791.call(null,word));
+if(cljs.core.truth_((function (){var or__4253__auto__ = (function (){var fexpr__74460 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 4, ["\u043C\u044B\u0448\u043E\u043D\u043E\u043A",null,"\u0434\u0435\u0432\u0447\u0430\u0442\u0430",null,"\u043C\u0435\u0434\u0432\u0435\u0436\u043E\u043D\u043E\u043A",null,"\u0440\u0435\u0431\u044F\u0442\u0430",null], null), null);
+return (fexpr__74460.cljs$core$IFn$_invoke$arity$1 ? fexpr__74460.cljs$core$IFn$_invoke$arity$1(word) : fexpr__74460.call(null,word));
 })();
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -74,35 +74,35 @@ return cljs.core.re_pattern(["(?:[\u043E\u0451]\u0301?\u043D\u043E?\u0301?\u043A
 if(cljs.core.truth_(cljs.core.re_find(/мя$/,word))){
 return /м[еёя].*?$/;
 } else {
-var G__1025792 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,chislo], null);
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"accusative","accusative",-886115147),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__1025792)){
-var G__1025800 = word;
-var G__1025801 = gender;
-var G__1025802 = animate;
-var G__1025803 = (cljs.core.truth_(animate)?new cljs.core.Keyword(null,"genitive","genitive",1156616057):new cljs.core.Keyword(null,"nominative","nominative",148321668));
-var G__1025804 = new cljs.core.Keyword(null,"plural","plural",-881591021);
-return (slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5 ? slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5(G__1025800,G__1025801,G__1025802,G__1025803,G__1025804) : slovarish.frontend.nouns.endings.noun_ending.call(null,G__1025800,G__1025801,G__1025802,G__1025803,G__1025804));
+var G__74461 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [padezh,chislo], null);
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"accusative","accusative",-886115147),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__74461)){
+var G__74462 = word;
+var G__74463 = gender;
+var G__74464 = animate;
+var G__74465 = (cljs.core.truth_(animate)?new cljs.core.Keyword(null,"genitive","genitive",1156616057):new cljs.core.Keyword(null,"nominative","nominative",148321668));
+var G__74466 = new cljs.core.Keyword(null,"plural","plural",-881591021);
+return (slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5 ? slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5(G__74462,G__74463,G__74464,G__74465,G__74466) : slovarish.frontend.nouns.endings.noun_ending.call(null,G__74462,G__74463,G__74464,G__74465,G__74466));
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"dative","dative",-1601922152),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__1025792)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"dative","dative",-1601922152),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__74461)){
 return /(?:ь|и\u0301?)?[ая]\u0301?м$/;
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"instrumental","instrumental",1991102259),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__1025792)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"instrumental","instrumental",1991102259),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__74461)){
 return /(?:ь|и\u0301?)?[аяь]\u0301?ми\u0301?$/;
 } else {
-if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"prepositional","prepositional",-1869030449),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__1025792)){
+if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"prepositional","prepositional",-1869030449),new cljs.core.Keyword(null,"plural","plural",-881591021)], null),G__74461)){
 return /(?:ь|и\u0301?)?[ая]\u0301?х$/;
 } else {
 var declension_group = slovarish.frontend.nouns.endings.which_declension(word,gender);
-var G__1025820 = declension_group;
-switch (G__1025820) {
+var G__74467 = declension_group;
+switch (G__74467) {
 case (1):
-var G__1025821 = chislo;
-var G__1025821__$1 = (((G__1025821 instanceof cljs.core.Keyword))?G__1025821.fqn:null);
-switch (G__1025821__$1) {
+var G__74468 = chislo;
+var G__74468__$1 = (((G__74468 instanceof cljs.core.Keyword))?G__74468.fqn:null);
+switch (G__74468__$1) {
 case "singular":
-var G__1025822 = padezh;
-var G__1025822__$1 = (((G__1025822 instanceof cljs.core.Keyword))?G__1025822.fqn:null);
-switch (G__1025822__$1) {
+var G__74469 = padezh;
+var G__74469__$1 = (((G__74469 instanceof cljs.core.Keyword))?G__74469.fqn:null);
+switch (G__74469__$1) {
 case "nominative":
 return /(?:ь|и\u0301?)?[ая]\u0301?$/;
 
@@ -134,9 +134,9 @@ return null;
 
 break;
 case "plural":
-var G__1025827 = padezh;
-var G__1025827__$1 = (((G__1025827 instanceof cljs.core.Keyword))?G__1025827.fqn:null);
-switch (G__1025827__$1) {
+var G__74470 = padezh;
+var G__74470__$1 = (((G__74470 instanceof cljs.core.Keyword))?G__74470.fqn:null);
+switch (G__74470__$1) {
 case "nominative":
 return /(?:ь|и\u0301?)?[ыи]\u0301?$/;
 
@@ -175,26 +175,26 @@ return null;
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1025821__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__74468__$1)].join('')));
 
 }
 
 break;
 case (2):
-var G__1025833 = chislo;
-var G__1025833__$1 = (((G__1025833 instanceof cljs.core.Keyword))?G__1025833.fqn:null);
-switch (G__1025833__$1) {
+var G__74471 = chislo;
+var G__74471__$1 = (((G__74471 instanceof cljs.core.Keyword))?G__74471.fqn:null);
+switch (G__74471__$1) {
 case "singular":
-var G__1025834 = padezh;
-var G__1025834__$1 = (((G__1025834 instanceof cljs.core.Keyword))?G__1025834.fqn:null);
-switch (G__1025834__$1) {
+var G__74472 = padezh;
+var G__74472__$1 = (((G__74472 instanceof cljs.core.Keyword))?G__74472.fqn:null);
+switch (G__74472__$1) {
 case "nominative":
 if(cljs.core.truth_((slovarish.frontend.nouns.endings.pol_words.cljs$core$IFn$_invoke$arity$1 ? slovarish.frontend.nouns.endings.pol_words.cljs$core$IFn$_invoke$arity$1(word) : slovarish.frontend.nouns.endings.pol_words.call(null,word)))){
 return /а\u0301?$/;
 } else {
-var G__1025838 = gender;
-var G__1025838__$1 = (((G__1025838 instanceof cljs.core.Keyword))?G__1025838.fqn:null);
-switch (G__1025838__$1) {
+var G__74473 = gender;
+var G__74473__$1 = (((G__74473 instanceof cljs.core.Keyword))?G__74473.fqn:null);
+switch (G__74473__$1) {
 case "masculine":
 return /(?:ье?|и?й|о\u0301?)$/;
 
@@ -215,12 +215,12 @@ return /[ьи]?[ая]\u0301?$/;
 
 break;
 case "accusative":
-var G__1025842 = word;
-var G__1025843 = gender;
-var G__1025844 = animate;
-var G__1025845 = (cljs.core.truth_(animate)?new cljs.core.Keyword(null,"genitive","genitive",1156616057):new cljs.core.Keyword(null,"nominative","nominative",148321668));
-var G__1025846 = new cljs.core.Keyword(null,"singular","singular",1409933445);
-return (slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5 ? slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5(G__1025842,G__1025843,G__1025844,G__1025845,G__1025846) : slovarish.frontend.nouns.endings.noun_ending.call(null,G__1025842,G__1025843,G__1025844,G__1025845,G__1025846));
+var G__74474 = word;
+var G__74475 = gender;
+var G__74476 = animate;
+var G__74477 = (cljs.core.truth_(animate)?new cljs.core.Keyword(null,"genitive","genitive",1156616057):new cljs.core.Keyword(null,"nominative","nominative",148321668));
+var G__74478 = new cljs.core.Keyword(null,"singular","singular",1409933445);
+return (slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5 ? slovarish.frontend.nouns.endings.noun_ending.cljs$core$IFn$_invoke$arity$5(G__74474,G__74475,G__74476,G__74477,G__74478) : slovarish.frontend.nouns.endings.noun_ending.call(null,G__74474,G__74475,G__74476,G__74477,G__74478));
 
 break;
 case "dative":
@@ -250,16 +250,16 @@ return null;
 
 break;
 case "plural":
-var G__1025848 = padezh;
-var G__1025848__$1 = (((G__1025848 instanceof cljs.core.Keyword))?G__1025848.fqn:null);
-switch (G__1025848__$1) {
+var G__74479 = padezh;
+var G__74479__$1 = (((G__74479 instanceof cljs.core.Keyword))?G__74479.fqn:null);
+switch (G__74479__$1) {
 case "nominative":
 if(cljs.core.truth_((slovarish.frontend.nouns.endings.pol_words.cljs$core$IFn$_invoke$arity$1 ? slovarish.frontend.nouns.endings.pol_words.cljs$core$IFn$_invoke$arity$1(word) : slovarish.frontend.nouns.endings.pol_words.call(null,word)))){
 return /ы\u0301?$/;
 } else {
-var G__1025849 = gender;
-var G__1025849__$1 = (((G__1025849 instanceof cljs.core.Keyword))?G__1025849.fqn:null);
-switch (G__1025849__$1) {
+var G__74480 = gender;
+var G__74480__$1 = (((G__74480 instanceof cljs.core.Keyword))?G__74480.fqn:null);
+switch (G__74480__$1) {
 case "masculine":
 return /(?:[ьи]?[ыиая]\u0301?)$/;
 
@@ -276,7 +276,7 @@ return null;
 
 break;
 case "genitive":
-if(cljs.core.truth_(cljs.core.re_find(/ие$/,word))){
+if(cljs.core.truth_(cljs.core.re_find(/[ьи]е$/,word))){
 return /ий$/;
 } else {
 if(cljs.core.truth_(cljs.core.re_find(/ово$/,word))){
@@ -299,22 +299,22 @@ return null;
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1025833__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__74471__$1)].join('')));
 
 }
 
 break;
 case (3):
-var G__1025860 = chislo;
-var G__1025860__$1 = (((G__1025860 instanceof cljs.core.Keyword))?G__1025860.fqn:null);
-switch (G__1025860__$1) {
+var G__74481 = chislo;
+var G__74481__$1 = (((G__74481 instanceof cljs.core.Keyword))?G__74481.fqn:null);
+switch (G__74481__$1) {
 case "singular":
-if(cljs.core.truth_((function (){var fexpr__1025862 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"nominative","nominative",148321668),null,new cljs.core.Keyword(null,"accusative","accusative",-886115147),null], null), null);
-return (fexpr__1025862.cljs$core$IFn$_invoke$arity$1 ? fexpr__1025862.cljs$core$IFn$_invoke$arity$1(padezh) : fexpr__1025862.call(null,padezh));
+if(cljs.core.truth_((function (){var fexpr__74482 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"nominative","nominative",148321668),null,new cljs.core.Keyword(null,"accusative","accusative",-886115147),null], null), null);
+return (fexpr__74482.cljs$core$IFn$_invoke$arity$1 ? fexpr__74482.cljs$core$IFn$_invoke$arity$1(padezh) : fexpr__74482.call(null,padezh));
 })())){
-var G__1025863 = gender;
-var G__1025863__$1 = (((G__1025863 instanceof cljs.core.Keyword))?G__1025863.fqn:null);
-switch (G__1025863__$1) {
+var G__74483 = gender;
+var G__74483__$1 = (((G__74483 instanceof cljs.core.Keyword))?G__74483.fqn:null);
+switch (G__74483__$1) {
 case "feminine":
 return /ь$/;
 
@@ -328,12 +328,12 @@ return null;
 
 }
 } else {
-if(cljs.core.truth_((function (){var fexpr__1025866 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"prepositional","prepositional",-1869030449),null,new cljs.core.Keyword(null,"dative","dative",-1601922152),null,new cljs.core.Keyword(null,"genitive","genitive",1156616057),null], null), null);
-return (fexpr__1025866.cljs$core$IFn$_invoke$arity$1 ? fexpr__1025866.cljs$core$IFn$_invoke$arity$1(padezh) : fexpr__1025866.call(null,padezh));
+if(cljs.core.truth_((function (){var fexpr__74484 = new cljs.core.PersistentHashSet(null, new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"prepositional","prepositional",-1869030449),null,new cljs.core.Keyword(null,"dative","dative",-1601922152),null,new cljs.core.Keyword(null,"genitive","genitive",1156616057),null], null), null);
+return (fexpr__74484.cljs$core$IFn$_invoke$arity$1 ? fexpr__74484.cljs$core$IFn$_invoke$arity$1(padezh) : fexpr__74484.call(null,padezh));
 })())){
-var G__1025870 = gender;
-var G__1025870__$1 = (((G__1025870 instanceof cljs.core.Keyword))?G__1025870.fqn:null);
-switch (G__1025870__$1) {
+var G__74485 = gender;
+var G__74485__$1 = (((G__74485 instanceof cljs.core.Keyword))?G__74485.fqn:null);
+switch (G__74485__$1) {
 case "feminine":
 return /и\u0301?$/;
 
@@ -347,13 +347,13 @@ return null;
 
 }
 } else {
-var G__1025871 = padezh;
-var G__1025871__$1 = (((G__1025871 instanceof cljs.core.Keyword))?G__1025871.fqn:null);
-switch (G__1025871__$1) {
+var G__74486 = padezh;
+var G__74486__$1 = (((G__74486 instanceof cljs.core.Keyword))?G__74486.fqn:null);
+switch (G__74486__$1) {
 case "instrumental":
-var G__1025872 = gender;
-var G__1025872__$1 = (((G__1025872 instanceof cljs.core.Keyword))?G__1025872.fqn:null);
-switch (G__1025872__$1) {
+var G__74487 = gender;
+var G__74487__$1 = (((G__74487 instanceof cljs.core.Keyword))?G__74487.fqn:null);
+switch (G__74487__$1) {
 case "feminine":
 return /ью\u0301?$/;
 
@@ -386,13 +386,13 @@ return null;
 
 break;
 case "plural":
-var G__1025873 = padezh;
-var G__1025873__$1 = (((G__1025873 instanceof cljs.core.Keyword))?G__1025873.fqn:null);
-switch (G__1025873__$1) {
+var G__74488 = padezh;
+var G__74488__$1 = (((G__74488 instanceof cljs.core.Keyword))?G__74488.fqn:null);
+switch (G__74488__$1) {
 case "nominative":
-var G__1025877 = gender;
-var G__1025877__$1 = (((G__1025877 instanceof cljs.core.Keyword))?G__1025877.fqn:null);
-switch (G__1025877__$1) {
+var G__74489 = gender;
+var G__74489__$1 = (((G__74489 instanceof cljs.core.Keyword))?G__74489.fqn:null);
+switch (G__74489__$1) {
 case "feminine":
 return /и\u0301?$/;
 
@@ -408,9 +408,9 @@ return null;
 
 break;
 case "genitive":
-var G__1025878 = gender;
-var G__1025878__$1 = (((G__1025878 instanceof cljs.core.Keyword))?G__1025878.fqn:null);
-switch (G__1025878__$1) {
+var G__74490 = gender;
+var G__74490__$1 = (((G__74490 instanceof cljs.core.Keyword))?G__74490.fqn:null);
+switch (G__74490__$1) {
 case "feminine":
 return /е\u0301?й$/;
 
@@ -432,7 +432,7 @@ return null;
 
 break;
 default:
-throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__1025860__$1)].join('')));
+throw (new Error(["No matching clause: ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(G__74481__$1)].join('')));
 
 }
 
@@ -455,9 +455,9 @@ slovarish.frontend.nouns.endings.adj_ending = (function slovarish$frontend$nouns
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(chislo,new cljs.core.Keyword(null,"plural","plural",-881591021))){
 return /[ыи]\u0301?[емх]?и?$/;
 } else {
-var G__1025882 = gender;
-var G__1025882__$1 = (((G__1025882 instanceof cljs.core.Keyword))?G__1025882.fqn:null);
-switch (G__1025882__$1) {
+var G__74491 = gender;
+var G__74491__$1 = (((G__74491 instanceof cljs.core.Keyword))?G__74491.fqn:null);
+switch (G__74491__$1) {
 case "masculine":
 return /(?:[ыои]\u0301?й|[ое]\u0301?го|[ое]\u0301?му|[ыиоеё]\u0301?м)$/;
 

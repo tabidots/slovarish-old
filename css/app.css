@@ -633,7 +633,13 @@ makes it invisible because of overflow: hidden; on .primary-gloss */
 .word-form.past.irregular-form { /* verb view */
   font-weight: 700;
 }
-.word-form.irregular-form::before { /* ::before not ::after b/c of direction: rtl */
+.word-form:not(.short-form).irregular-form::before { /* ::before not ::after b/c of direction: rtl */
+  content: "\26A1";
+  float: right;
+  margin-left: max(0.5vw, 5px);
+  margin-right: max(0.5vw, 5px);
+}
+.word-form.short-form.irregular-form::before { /* Adjectives */
   content: "\26A1";
   float: right;
   margin-left: max(0.5vw, 5px);
