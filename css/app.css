@@ -107,7 +107,7 @@ select {
 .word-form.imperfective, .word-form.noun.irregular-form {
   background-color: #D7EBBA;
 }
-.verb-entry.definite .word-form, .verb-entry.imperfective .word-form {
+.verb-entry.definite .word-form, .verb-entry.imperfective .word-form, .word-form.irregular-form.light {
   background-color: #f0f7e5;
 }
 .biaspectual {
