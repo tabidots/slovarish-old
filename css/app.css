@@ -167,11 +167,13 @@ select {
 a.word-button {
   cursor: pointer;
 }
-a.word-button:hover, a.word-button:active, a.sense:hover, a.participle:hover > .word-form {
-  background-image: none !important; /* !important overwrites the biaspectual gradient */
-  background-color: #0D1F2D;
-  color: white;
-  font-weight: 700;
+@media screen and (any-hover: hover) {
+  a.word-button:hover, a.word-button:active, a.sense:hover, a.participle:hover > .word-form {
+    background-image: none !important; /* !important overwrites the biaspectual gradient */
+    background-color: #0D1F2D;
+    color: white;
+    font-weight: 700;
+  }
 }
 #random-word-button {
   position: fixed;
@@ -309,6 +311,19 @@ a.word-button:hover, a.word-button:active, a.sense:hover, a.participle:hover > .
 #legend .word-form:not(.irregular-form):not(.unpredictable-stress) {
   padding: 7px 12px !important;
 }
+#donate-button {
+  position: fixed;
+  height: 21px;
+  z-index: 10;
+  right: 1.5vw;
+  bottom: 2.25vh;
+}
+@media only screen and (orientation:portrait) {
+  #donate-button {
+    right: 3vw;
+    bottom: 2vh;
+  }
+}
 
 /* || PAGE HEADER (the row above the input form) */
 
@@ -334,10 +349,12 @@ a.word-button:hover, a.word-button:active, a.sense:hover, a.participle:hover > .
   font-weight: 700;
   background-color: #0D1F2D;
 }
-#header a.word-button:hover, a.sense:active {
-  background-color: #D7EBBA;
-  color: black;
-  font-weight: 700;
+@media (any-hover: hover) {
+  #header a.word-button:hover, a.sense:active {
+    background-color: #D7EBBA;
+    color: black;
+    font-weight: 700;
+  }
 }
 .toggle-container .option {
   font-weight: 700;
