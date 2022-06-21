@@ -346,19 +346,21 @@ a.word-button {
   position: relative;
 }
 @media screen and (any-hover: hover) {
-  #pos-buttons .word-button::after {
+  #pos-buttons .word-button::after, #suggestions .word-button::after {
     transform: translateX(50%), translateY(-50%);
     font-size: 50%;
     font-weight: 300;
-    color: white;
     padding: 2px 5px;
     position: absolute;
     right: -4px;
     top: -10px;
     z-index: 5;
+    background-color: #eee;
     border-radius: 5px;
-    background-color: #0D1F2D;
-    transition: background-color 0.25s, color 0.25s;
+  }
+  #suggestions .word-button::after {
+    right: -8px;
+    top: -6px;
   }
   #pos-buttons .word-button:first-child::after {
     content: "8";
@@ -369,7 +371,23 @@ a.word-button {
   #pos-buttons .word-button:nth-child(3)::after {
     content: "0";
   }
-  #pos-buttons .word-button:hover::after, #pos-buttons .word-button.current::after {
+  #suggestions .word-list .word-button:first-child::after {
+    content: "3";
+  }
+  #suggestions .word-list .word-button:nth-child(2)::after {
+    content: "4";
+  }
+  #suggestions .word-list .word-button:nth-child(3)::after {
+    content: "5"
+  }
+  #suggestions .word-list .word-button:nth-child(4)::after {
+    content: "6";
+  }
+  #suggestions .word-list .word-button:nth-child(5)::after {
+    content: "7";
+  }
+  #pos-buttons .word-button:hover::after, #pos-buttons .word-button.current::after,
+  #suggestions .word-list .word-button:hover::after {
     background-color: #eee;
     color: black;
   }
@@ -551,7 +569,11 @@ form li {
   text-align: center;
 }
 #suggestions > span:first-child {
-  font-size: 80%
+  font-size: 80%;
+}
+#suggestions .word-button {
+  margin-right: min(1vw, 10px);
+  position: relative;
 }
 .icons .icon {
   font-size: clamp(8px, 2.3vw, 22px);
