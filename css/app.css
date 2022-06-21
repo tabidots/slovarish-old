@@ -946,6 +946,10 @@ th.row-header, #adj-table .row-header { /* Slightly bigger than the verb-view on
   display: table-cell;
   font-size: clamp(14px, 1.4vw, 18px);
 }
+th.row-header .emoji {
+  font-style: normal;
+  padding-left: 5px;
+}
 #noun-table tbody tr { /* Keeps the row height uniform in learners' ordering */
   height: min(5vw, 50px);
 }
