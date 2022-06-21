@@ -343,6 +343,36 @@ a.word-button {
   font-weight: 700;
   margin-left: min(0.3vw, 5px);
   margin-right: min(0.3vw, 5px);
+  position: relative;
+}
+@media screen and (any-hover: hover) {
+  #pos-buttons .word-button::after {
+    transform: translateX(50%), translateY(-50%);
+    font-size: 50%;
+    font-weight: 300;
+    color: white;
+    padding: 2px 5px;
+    position: absolute;
+    right: -4px;
+    top: -10px;
+    z-index: 5;
+    border-radius: 5px;
+    background-color: #0D1F2D;
+    transition: background-color 0.25s, color 0.25s;
+  }
+  #pos-buttons .word-button:first-child::after {
+    content: "8";
+  }
+  #pos-buttons .word-button:nth-child(2)::after {
+    content: "9";
+  }
+  #pos-buttons .word-button:nth-child(3)::after {
+    content: "0";
+  }
+  #pos-buttons .word-button:hover::after, #pos-buttons .word-button.current::after {
+    background-color: #eee;
+    color: black;
+  }
 }
 #header .word-button.current, .sense.current {
   color: white;
