@@ -7,13 +7,13 @@ slovarish.frontend.navigation.truncated_QMARK_ = (function slovarish$frontend$na
 return (el.offsetWidth < el.scrollWidth);
 });
 slovarish.frontend.navigation.toggle_gloss_arrows = (function slovarish$frontend$navigation$toggle_gloss_arrows(){
-var seq__34976 = cljs.core.seq(document.querySelectorAll(".primary-gloss"));
-var chunk__34977 = null;
-var count__34978 = (0);
-var i__34979 = (0);
+var seq__53788 = cljs.core.seq(document.querySelectorAll(".primary-gloss"));
+var chunk__53789 = null;
+var count__53790 = (0);
+var i__53791 = (0);
 while(true){
-if((i__34979 < count__34978)){
-var el = chunk__34977.cljs$core$IIndexed$_nth$arity$2(null,i__34979);
+if((i__53791 < count__53790)){
+var el = chunk__53789.cljs$core$IIndexed$_nth$arity$2(null,i__53791);
 if(slovarish.frontend.navigation.truncated_QMARK_(el)){
 goog.dom.classlist.add(el,"down-arrow");
 } else {
@@ -21,32 +21,32 @@ goog.dom.classlist.remove(el,"down-arrow");
 }
 
 
-var G__35004 = seq__34976;
-var G__35005 = chunk__34977;
-var G__35006 = count__34978;
-var G__35007 = (i__34979 + (1));
-seq__34976 = G__35004;
-chunk__34977 = G__35005;
-count__34978 = G__35006;
-i__34979 = G__35007;
+var G__53816 = seq__53788;
+var G__53817 = chunk__53789;
+var G__53818 = count__53790;
+var G__53819 = (i__53791 + (1));
+seq__53788 = G__53816;
+chunk__53789 = G__53817;
+count__53790 = G__53818;
+i__53791 = G__53819;
 continue;
 } else {
-var temp__5753__auto__ = cljs.core.seq(seq__34976);
+var temp__5753__auto__ = cljs.core.seq(seq__53788);
 if(temp__5753__auto__){
-var seq__34976__$1 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(seq__34976__$1)){
-var c__4679__auto__ = cljs.core.chunk_first(seq__34976__$1);
-var G__35008 = cljs.core.chunk_rest(seq__34976__$1);
-var G__35009 = c__4679__auto__;
-var G__35010 = cljs.core.count(c__4679__auto__);
-var G__35011 = (0);
-seq__34976 = G__35008;
-chunk__34977 = G__35009;
-count__34978 = G__35010;
-i__34979 = G__35011;
+var seq__53788__$1 = temp__5753__auto__;
+if(cljs.core.chunked_seq_QMARK_(seq__53788__$1)){
+var c__4679__auto__ = cljs.core.chunk_first(seq__53788__$1);
+var G__53820 = cljs.core.chunk_rest(seq__53788__$1);
+var G__53821 = c__4679__auto__;
+var G__53822 = cljs.core.count(c__4679__auto__);
+var G__53823 = (0);
+seq__53788 = G__53820;
+chunk__53789 = G__53821;
+count__53790 = G__53822;
+i__53791 = G__53823;
 continue;
 } else {
-var el = cljs.core.first(seq__34976__$1);
+var el = cljs.core.first(seq__53788__$1);
 if(slovarish.frontend.navigation.truncated_QMARK_(el)){
 goog.dom.classlist.add(el,"down-arrow");
 } else {
@@ -54,14 +54,14 @@ goog.dom.classlist.remove(el,"down-arrow");
 }
 
 
-var G__35012 = cljs.core.next(seq__34976__$1);
-var G__35013 = null;
-var G__35014 = (0);
-var G__35015 = (0);
-seq__34976 = G__35012;
-chunk__34977 = G__35013;
-count__34978 = G__35014;
-i__34979 = G__35015;
+var G__53824 = cljs.core.next(seq__53788__$1);
+var G__53825 = null;
+var G__53826 = (0);
+var G__53827 = (0);
+seq__53788 = G__53824;
+chunk__53789 = G__53825;
+count__53790 = G__53826;
+i__53791 = G__53827;
 continue;
 }
 } else {
@@ -75,8 +75,8 @@ slovarish.frontend.navigation.base_cell_colors = new cljs.core.PersistentArrayMa
 slovarish.frontend.navigation.color_cells_by_score = (function slovarish$frontend$navigation$color_cells_by_score(){
 var white = goog.color.hexToRgb("#fffcf5");
 var cells = document.querySelectorAll("#noun-table td");
-var max_score = (function (){var or__4253__auto__ = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.max,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__34980_SHARP_){
-return p1__34980_SHARP_.getAttribute("data-score");
+var max_score = (function (){var or__4253__auto__ = cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.max,cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p1__53793_SHARP_){
+return p1__53793_SHARP_.getAttribute("data-score");
 }),cells));
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
@@ -85,22 +85,22 @@ return (1);
 }
 })();
 var factor = ((1) / max_score);
-var seq__34981 = cljs.core.seq(cells);
-var chunk__34983 = null;
-var count__34984 = (0);
-var i__34985 = (0);
+var seq__53794 = cljs.core.seq(cells);
+var chunk__53796 = null;
+var count__53797 = (0);
+var i__53798 = (0);
 while(true){
-if((i__34985 < count__34984)){
-var cell = chunk__34983.cljs$core$IIndexed$_nth$arity$2(null,i__34985);
-var cell_type_35016 = (cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?new cljs.core.Keyword(null,"irregular-form","irregular-form",-1497468882):(function (){var or__4253__auto__ = new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(slovarish.frontend.state.result());
+if((i__53798 < count__53797)){
+var cell = chunk__53796.cljs$core$IIndexed$_nth$arity$2(null,i__53798);
+var cell_type_53828 = (cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?new cljs.core.Keyword(null,"irregular-form","irregular-form",-1497468882):(function (){var or__4253__auto__ = new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(slovarish.frontend.state.result());
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
 } else {
 return new cljs.core.Keyword(null,"default","default",-1987822328);
 }
 })());
-var base_color_35017 = goog.color.hexToRgb((cell_type_35016.cljs$core$IFn$_invoke$arity$1 ? cell_type_35016.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.navigation.base_cell_colors) : cell_type_35016.call(null,slovarish.frontend.navigation.base_cell_colors)));
-var score_35018 = ((function (){var or__4253__auto__ = cell.getAttribute("data-score");
+var base_color_53829 = goog.color.hexToRgb((cell_type_53828.cljs$core$IFn$_invoke$arity$1 ? cell_type_53828.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.navigation.base_cell_colors) : cell_type_53828.call(null,slovarish.frontend.navigation.base_cell_colors)));
+var score_53830 = ((function (){var or__4253__auto__ = cell.getAttribute("data-score");
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
 } else {
@@ -116,21 +116,21 @@ return new cljs.core.Keyword(null,"wordform-scores","wordform-scores",454926526)
 return and__4251__auto__;
 }
 })())){
-if((score_35018 <= 0.2)){
+if((score_53830 <= 0.2)){
 goog.dom.classlist.add(cell,"uncommon");
 } else {
 }
 
-goog.style.setStyle(cell,"background-color",goog.color.rgbArrayToHex(goog.color.blend(base_color_35017,white,score_35018)));
+goog.style.setStyle(cell,"background-color",goog.color.rgbArrayToHex(goog.color.blend(base_color_53829,white,score_53830)));
 } else {
 goog.style.setStyle(cell,"background-color","");
 
-goog.dom.classlist.addAll(cell,["light",(cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?null:(function (){var or__4253__auto__ = (function (){var G__34990 = slovarish.frontend.state.result();
-var G__34990__$1 = (((G__34990 == null))?null:new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(G__34990));
-if((G__34990__$1 == null)){
+goog.dom.classlist.addAll(cell,["light",(cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?null:(function (){var or__4253__auto__ = (function (){var G__53802 = slovarish.frontend.state.result();
+var G__53802__$1 = (((G__53802 == null))?null:new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(G__53802));
+if((G__53802__$1 == null)){
 return null;
 } else {
-return cljs.core.name(G__34990__$1);
+return cljs.core.name(G__53802__$1);
 }
 })();
 if(cljs.core.truth_(or__4253__auto__)){
@@ -142,41 +142,41 @@ return "default";
 }
 
 
-var G__35019 = seq__34981;
-var G__35020 = chunk__34983;
-var G__35021 = count__34984;
-var G__35022 = (i__34985 + (1));
-seq__34981 = G__35019;
-chunk__34983 = G__35020;
-count__34984 = G__35021;
-i__34985 = G__35022;
+var G__53831 = seq__53794;
+var G__53832 = chunk__53796;
+var G__53833 = count__53797;
+var G__53834 = (i__53798 + (1));
+seq__53794 = G__53831;
+chunk__53796 = G__53832;
+count__53797 = G__53833;
+i__53798 = G__53834;
 continue;
 } else {
-var temp__5753__auto__ = cljs.core.seq(seq__34981);
+var temp__5753__auto__ = cljs.core.seq(seq__53794);
 if(temp__5753__auto__){
-var seq__34981__$1 = temp__5753__auto__;
-if(cljs.core.chunked_seq_QMARK_(seq__34981__$1)){
-var c__4679__auto__ = cljs.core.chunk_first(seq__34981__$1);
-var G__35023 = cljs.core.chunk_rest(seq__34981__$1);
-var G__35024 = c__4679__auto__;
-var G__35025 = cljs.core.count(c__4679__auto__);
-var G__35026 = (0);
-seq__34981 = G__35023;
-chunk__34983 = G__35024;
-count__34984 = G__35025;
-i__34985 = G__35026;
+var seq__53794__$1 = temp__5753__auto__;
+if(cljs.core.chunked_seq_QMARK_(seq__53794__$1)){
+var c__4679__auto__ = cljs.core.chunk_first(seq__53794__$1);
+var G__53835 = cljs.core.chunk_rest(seq__53794__$1);
+var G__53836 = c__4679__auto__;
+var G__53837 = cljs.core.count(c__4679__auto__);
+var G__53838 = (0);
+seq__53794 = G__53835;
+chunk__53796 = G__53836;
+count__53797 = G__53837;
+i__53798 = G__53838;
 continue;
 } else {
-var cell = cljs.core.first(seq__34981__$1);
-var cell_type_35027 = (cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?new cljs.core.Keyword(null,"irregular-form","irregular-form",-1497468882):(function (){var or__4253__auto__ = new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(slovarish.frontend.state.result());
+var cell = cljs.core.first(seq__53794__$1);
+var cell_type_53839 = (cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?new cljs.core.Keyword(null,"irregular-form","irregular-form",-1497468882):(function (){var or__4253__auto__ = new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(slovarish.frontend.state.result());
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
 } else {
 return new cljs.core.Keyword(null,"default","default",-1987822328);
 }
 })());
-var base_color_35028 = goog.color.hexToRgb((cell_type_35027.cljs$core$IFn$_invoke$arity$1 ? cell_type_35027.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.navigation.base_cell_colors) : cell_type_35027.call(null,slovarish.frontend.navigation.base_cell_colors)));
-var score_35029 = ((function (){var or__4253__auto__ = cell.getAttribute("data-score");
+var base_color_53840 = goog.color.hexToRgb((cell_type_53839.cljs$core$IFn$_invoke$arity$1 ? cell_type_53839.cljs$core$IFn$_invoke$arity$1(slovarish.frontend.navigation.base_cell_colors) : cell_type_53839.call(null,slovarish.frontend.navigation.base_cell_colors)));
+var score_53841 = ((function (){var or__4253__auto__ = cell.getAttribute("data-score");
 if(cljs.core.truth_(or__4253__auto__)){
 return or__4253__auto__;
 } else {
@@ -192,21 +192,21 @@ return new cljs.core.Keyword(null,"wordform-scores","wordform-scores",454926526)
 return and__4251__auto__;
 }
 })())){
-if((score_35029 <= 0.2)){
+if((score_53841 <= 0.2)){
 goog.dom.classlist.add(cell,"uncommon");
 } else {
 }
 
-goog.style.setStyle(cell,"background-color",goog.color.rgbArrayToHex(goog.color.blend(base_color_35028,white,score_35029)));
+goog.style.setStyle(cell,"background-color",goog.color.rgbArrayToHex(goog.color.blend(base_color_53840,white,score_53841)));
 } else {
 goog.style.setStyle(cell,"background-color","");
 
-goog.dom.classlist.addAll(cell,["light",(cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?null:(function (){var or__4253__auto__ = (function (){var G__34991 = slovarish.frontend.state.result();
-var G__34991__$1 = (((G__34991 == null))?null:new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(G__34991));
-if((G__34991__$1 == null)){
+goog.dom.classlist.addAll(cell,["light",(cljs.core.truth_(goog.dom.classlist.contains(cell,"irregular-form"))?null:(function (){var or__4253__auto__ = (function (){var G__53803 = slovarish.frontend.state.result();
+var G__53803__$1 = (((G__53803 == null))?null:new cljs.core.Keyword(null,"gender","gender",-733930727).cljs$core$IFn$_invoke$arity$1(G__53803));
+if((G__53803__$1 == null)){
 return null;
 } else {
-return cljs.core.name(G__34991__$1);
+return cljs.core.name(G__53803__$1);
 }
 })();
 if(cljs.core.truth_(or__4253__auto__)){
@@ -218,14 +218,14 @@ return "default";
 }
 
 
-var G__35030 = cljs.core.next(seq__34981__$1);
-var G__35031 = null;
-var G__35032 = (0);
-var G__35033 = (0);
-seq__34981 = G__35030;
-chunk__34983 = G__35031;
-count__34984 = G__35032;
-i__34985 = G__35033;
+var G__53842 = cljs.core.next(seq__53794__$1);
+var G__53843 = null;
+var G__53844 = (0);
+var G__53845 = (0);
+seq__53794 = G__53842;
+chunk__53796 = G__53843;
+count__53797 = G__53844;
+i__53798 = G__53845;
 continue;
 }
 } else {
@@ -243,14 +243,14 @@ return history.pushState(cljs.core.PersistentArrayMap.EMPTY,null,slovarish.front
 });
 slovarish.frontend.navigation.go_to_word = (function slovarish$frontend$navigation$go_to_word(var_args){
 var args__4870__auto__ = [];
-var len__4864__auto___35034 = arguments.length;
-var i__4865__auto___35035 = (0);
+var len__4864__auto___53846 = arguments.length;
+var i__4865__auto___53847 = (0);
 while(true){
-if((i__4865__auto___35035 < len__4864__auto___35034)){
-args__4870__auto__.push((arguments[i__4865__auto___35035]));
+if((i__4865__auto___53847 < len__4864__auto___53846)){
+args__4870__auto__.push((arguments[i__4865__auto___53847]));
 
-var G__35036 = (i__4865__auto___35035 + (1));
-i__4865__auto___35035 = G__35036;
+var G__53848 = (i__4865__auto___53847 + (1));
+i__4865__auto___53847 = G__53848;
 continue;
 } else {
 }
@@ -261,12 +261,12 @@ var argseq__4871__auto__ = ((((1) < args__4870__auto__.length))?(new cljs.core.I
 return slovarish.frontend.navigation.go_to_word.cljs$core$IFn$_invoke$arity$variadic((arguments[(0)]),argseq__4871__auto__);
 });
 
-(slovarish.frontend.navigation.go_to_word.cljs$core$IFn$_invoke$arity$variadic = (function (word,p__34994){
-var map__34995 = p__34994;
-var map__34995__$1 = cljs.core.__destructure_map(map__34995);
-var target_pos = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__34995__$1,new cljs.core.Keyword(null,"target-pos","target-pos",1907947494),null);
-var filter_fn = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__34995__$1,new cljs.core.Keyword(null,"filter-fn","filter-fn",1689475675),null);
-var push_state_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__34995__$1,new cljs.core.Keyword(null,"push-state?","push-state?",-1915122392),true);
+(slovarish.frontend.navigation.go_to_word.cljs$core$IFn$_invoke$arity$variadic = (function (word,p__53806){
+var map__53807 = p__53806;
+var map__53807__$1 = cljs.core.__destructure_map(map__53807);
+var target_pos = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__53807__$1,new cljs.core.Keyword(null,"target-pos","target-pos",1907947494),null);
+var filter_fn = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__53807__$1,new cljs.core.Keyword(null,"filter-fn","filter-fn",1689475675),null);
+var push_state_QMARK_ = cljs.core.get.cljs$core$IFn$_invoke$arity$3(map__53807__$1,new cljs.core.Keyword(null,"push-state?","push-state?",-1915122392),true);
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(slovarish.frontend.state.pos),target_pos)){
 cljs.core.reset_BANG_(slovarish.frontend.state.input,"");
 
@@ -279,23 +279,23 @@ cljs.core.reset_BANG_(slovarish.frontend.state.pos,target_pos);
 } else {
 }
 
-cljs.core.reset_BANG_(slovarish.frontend.state.results,(((cljs.core.count(word) >= (2)))?(function (){var G__34996 = (function (){var G__34997 = cljs.core.deref(slovarish.frontend.state.pos);
-var G__34997__$1 = (((G__34997 instanceof cljs.core.Keyword))?G__34997.fqn:null);
-switch (G__34997__$1) {
+cljs.core.reset_BANG_(slovarish.frontend.state.results,(((cljs.core.count(word) >= (2)))?(function (){var G__53808 = (function (){var G__53809 = cljs.core.deref(slovarish.frontend.state.pos);
+var G__53809__$1 = (((G__53809 instanceof cljs.core.Keyword))?G__53809.fqn:null);
+switch (G__53809__$1) {
 case "noun":
 return slovarish.frontend.nouns.declension.declensions(word);
 
 break;
 case "verb":
-var G__34999 = clojure.string.lower_case(word);
-var fexpr__34998 = cljs.core.deref(slovarish.frontend.data.all_verbs);
-return (fexpr__34998.cljs$core$IFn$_invoke$arity$1 ? fexpr__34998.cljs$core$IFn$_invoke$arity$1(G__34999) : fexpr__34998.call(null,G__34999));
+var G__53811 = clojure.string.lower_case(word);
+var fexpr__53810 = cljs.core.deref(slovarish.frontend.data.all_verbs);
+return (fexpr__53810.cljs$core$IFn$_invoke$arity$1 ? fexpr__53810.cljs$core$IFn$_invoke$arity$1(G__53811) : fexpr__53810.call(null,G__53811));
 
 break;
 case "adjective":
-var G__35001 = clojure.string.lower_case(word);
-var fexpr__35000 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
-return (fexpr__35000.cljs$core$IFn$_invoke$arity$1 ? fexpr__35000.cljs$core$IFn$_invoke$arity$1(G__35001) : fexpr__35000.call(null,G__35001));
+var G__53813 = clojure.string.lower_case(word);
+var fexpr__53812 = cljs.core.deref(slovarish.frontend.data.all_adjectives);
+return (fexpr__53812.cljs$core$IFn$_invoke$arity$1 ? fexpr__53812.cljs$core$IFn$_invoke$arity$1(G__53813) : fexpr__53812.call(null,G__53813));
 
 break;
 default:
@@ -304,9 +304,9 @@ return null;
 }
 })();
 if(cljs.core.truth_(filter_fn)){
-return cljs.core.filter.cljs$core$IFn$_invoke$arity$2(filter_fn,G__34996);
+return cljs.core.filter.cljs$core$IFn$_invoke$arity$2(filter_fn,G__53808);
 } else {
-return G__34996;
+return G__53808;
 }
 })():null));
 }
@@ -350,11 +350,11 @@ return null;
 (slovarish.frontend.navigation.go_to_word.cljs$lang$maxFixedArity = (1));
 
 /** @this {Function} */
-(slovarish.frontend.navigation.go_to_word.cljs$lang$applyTo = (function (seq34992){
-var G__34993 = cljs.core.first(seq34992);
-var seq34992__$1 = cljs.core.next(seq34992);
+(slovarish.frontend.navigation.go_to_word.cljs$lang$applyTo = (function (seq53804){
+var G__53805 = cljs.core.first(seq53804);
+var seq53804__$1 = cljs.core.next(seq53804);
 var self__4851__auto__ = this;
-return self__4851__auto__.cljs$core$IFn$_invoke$arity$variadic(G__34993,seq34992__$1);
+return self__4851__auto__.cljs$core$IFn$_invoke$arity$variadic(G__53805,seq53804__$1);
 }));
 
 slovarish.frontend.navigation.prev_sense = (function slovarish$frontend$navigation$prev_sense(){
