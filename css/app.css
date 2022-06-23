@@ -266,7 +266,7 @@ a.word-button {
   opacity: 1;
   z-index: 100;
 }
-#credits a, #credits a:visited {
+#credits a, #credits a:visited, #external a, #external a:visited {
   text-decoration: underline;
   text-decoration-style: dotted;
   text-underline-offset: 2px;
@@ -281,7 +281,7 @@ a.word-button {
 #credits a::after {
   content: "\00A0➡️ ";
 }
-#credits a:hover {
+#credits a:hover, #external a:hover {
   text-decoration: none;
   font-weight: 700;
   color: white;
