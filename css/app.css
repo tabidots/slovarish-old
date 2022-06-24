@@ -931,6 +931,13 @@ a.participle > .word-form::after {
 .imperative {
   grid-column: -2 / span 1;
 }
+@media not all and (min-resolution:.001dpcm) { @media {
+  /* https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome */
+  .word-form.participle, a.participle .word-form  {
+    /* Fixes stupid bug related to RTL text direction and parentheses in Safari */
+    direction: ltr;
+  }
+}}
 
 /* || NOUN VIEW */
 
