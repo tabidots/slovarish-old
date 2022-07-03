@@ -975,8 +975,10 @@ th.row-header .emoji {
   font-weight: 200;
 }
 .uncommon .fleeting-vowel {
-  font-weight: 300;
   color: #ff9e9e;
+}
+.uncommon:not(.same-as-base) .fleeting-vowel {
+  font-weight: 300;
 }
 td.same-as-base {
   font-weight: 700;
